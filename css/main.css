@@ -13,7 +13,7 @@
 html {
     color: #222;
     font-size: 1em;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
 /*
@@ -97,8 +97,62 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body {
+    font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+    background: #FAFAFA;
+}
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
+}
 
+#brand-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+}
+
+#brand-header > img {
+    order: -1;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+#brand-header > div {
+    margin-left: 20px; 
+}
+
+#brand-header > div h1 {
+    font-size: 24px;
+    margin: 0 0 4px 0;
+}
+
+.content-section {
+    padding: 30px 24px;
+}
+
+.content-section h1,
+.content-section h2,
+.content-section h3,
+.content-section h4,
+.content-section h5,
+.content-section h6 {
+    color: #4A4A4A;
+}
+
+.content-section p {
+    margin: 50px 0;
+    color: #707070;
+}
+
+.divider {
+    background: #65D1B7;
+    width: 100px;
+    height: 8px;
+    margin: 0 auto;
+}
 
 
 
