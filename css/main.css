@@ -277,6 +277,24 @@ footer .attribution {
     font-size: 0.75rem;
 }
 
+footer .social-links a {
+    color: #4A4A4A;
+}
+
+.social-links a {
+    font-size: 1.1rem;
+    color: #707070;
+    margin-right: 5px;
+}
+
+.social-links a:last-of-type {
+    margin-right: 0;
+}
+
+.social-links a:hover {
+    color: rgba(0, 0, 0, 0.3);
+}
+
 
 
 
