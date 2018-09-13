@@ -186,6 +186,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .work-item:hover .content.scaled-effect {
     transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
 }
 
 .work-item .overlay > .centered {
@@ -208,22 +210,26 @@ h1, h2, h3, h4, h5, h6 {
     color: #FFF;
 }
 
-.content-section {
-    padding: 30px 24px;
+.skills-section {
+    background: lightgray;
 }
 
-.content-section h1,
-.content-section h2,
-.content-section h3,
-.content-section h4,
-.content-section h5,
-.content-section h6 {
+.site-section {
+    padding: 30px 24px;
+    color: #707070;
+}
+
+.site-section h1,
+.site-section h2,
+.site-section h3,
+.site-section h4,
+.site-section h5,
+.site-section h6 {
     color: #4A4A4A;
 }
 
-.content-section p {
+.site-section p {
     margin: 50px 0;
-    color: #707070;
 }
 
 .divider {
@@ -233,7 +239,15 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
 }
 
+.site-section > .title {
+    margin-top: 0;
+    font-size: 1.2em;
+}
 
+.skill-item .title,
+.skill-item .description {
+    font-size: 1em;
+}
 
 
 
