@@ -129,6 +129,60 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 0 4px 0;
 }
 
+.tumee-background {
+    background-image: url(../img/tumee-background.png);
+}
+
+.experience-box {
+    position: relative;
+    height: 250px;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.experience-box .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+
+    color: #FFF;
+    z-index: 100;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.15s ease-in;
+}
+
+.experience-box:hover .overlay {
+    visibility: visible;
+    opacity: 1;
+}
+
+.experience-box .overlay > .centered {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+}
+
+.experience-box .title {
+    font-size: 1.5rem;  
+}
+
+.experience-box .description {
+    font-size: 1rem;
+    color: #FFF;
+}
+
 .content-section {
     padding: 30px 24px;
 }
