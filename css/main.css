@@ -210,8 +210,8 @@ h1, h2, h3, h4, h5, h6 {
     color: #FFF;
 }
 
-.skills-section {
-    background: lightgray;
+.site-section.dark {
+    background: #f0f2f1;
 }
 
 .site-section {
@@ -249,8 +249,33 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1em;
 }
 
+footer {
+    background: #65D1B7;
+    padding: 30px 24px;
+    text-align: center;
+}
 
+footer .contact {
+    font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
 
+footer .contact a {
+    color: #000;
+    font-weight: 800;
+}
+
+footer .copyright {
+    font-size: 0.75rem;
+    padding: 10px 0;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+footer .attribution {
+    font-size: 0.75rem;
+}
 
 
 
