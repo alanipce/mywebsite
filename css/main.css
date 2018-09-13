@@ -121,7 +121,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #brand-header > div {
-    margin-left: 20px; 
+    margin-left: 40px; 
 }
 
 #brand-header > div h1 {
@@ -139,12 +139,16 @@ h1, h2, h3, h4, h5, h6 {
     background-image: url(../img/caseaide-background.png);
 }
 
+.work-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .work-item {
     position: relative;
     height: 250px;
-    max-width: 450px;
-    margin: 0 auto;
-    margin-bottom: 25px;
+    width: 450px;
+    margin: 12px;
     border-radius: 5px;
     background: lightgray;
     background-size: cover;
@@ -244,6 +248,17 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.2em;
 }
 
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.skill-item {
+    padding: 10px;
+    width: 450px;
+}
+
 .skill-item .title,
 .skill-item .description {
     font-size: 1em;
@@ -295,7 +310,9 @@ footer .social-links a {
     color: rgba(0, 0, 0, 0.3);
 }
 
-
+.introduction {
+    font-size: 1.2rem;
+}
 
 
 
@@ -389,8 +406,11 @@ footer .social-links a {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 950px) {
     /* Style adjustments for viewports that meet the condition */
+    .site-section {
+        padding: 30px 15%;
+    }
 }
 
 @media print,
