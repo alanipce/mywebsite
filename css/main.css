@@ -310,7 +310,7 @@ footer .social-links a {
     color: rgba(0, 0, 0, 0.3);
 }
 
-.introduction {
+.site-section p.introduction {
     font-size: 1.2rem;
 }
 
@@ -409,7 +409,14 @@ footer .social-links a {
 @media only screen and (min-width: 950px) {
     /* Style adjustments for viewports that meet the condition */
     .site-section {
-        padding: 30px 15%;
+        padding: 60px 15%;
+    }
+
+    .site-section p.introduction {
+        width: 75%;
+        font-size: 1.4rem;
+        margin-top: 16rem;
+        margin-bottom: 8rem;
     }
 }
 
