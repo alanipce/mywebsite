@@ -12,7 +12,7 @@
 
 html {
     color: #222;
-    font-size: 1em;
+    font-size: 16px;
     line-height: 1.5;
 }
 
@@ -125,7 +125,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #brand-header > div h1 {
-    font-size: 24px;
     margin: 0 0 4px 0;
 }
 
@@ -153,6 +152,7 @@ h1, h2, h3, h4, h5, h6 {
     background: lightgray;
     background-size: cover;
     overflow: hidden;
+    color: #FFF;
 }
 
 .work-item .content {
@@ -205,15 +205,6 @@ h1, h2, h3, h4, h5, h6 {
     -ms-transform: translateY(-50%);
 }
 
-.work-item .title {
-    font-size: 1.5rem;  
-}
-
-.work-item .description {
-    font-size: 1rem;
-    color: #FFF;
-}
-
 .site-section.dark {
     background: #f0f2f1;
 }
@@ -243,11 +234,6 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
 }
 
-.site-section > .title {
-    margin-top: 0;
-    font-size: 1.2em;
-}
-
 .skill-list {
     display: flex;
     flex-wrap: wrap;
@@ -257,11 +243,6 @@ h1, h2, h3, h4, h5, h6 {
 .skill-item {
     padding: 10px;
     width: 450px;
-}
-
-.skill-item .title,
-.skill-item .description {
-    font-size: 1em;
 }
 
 footer {
@@ -297,7 +278,7 @@ footer .social-links a {
 }
 
 .social-links a {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #707070;
     margin-right: 5px;
 }
@@ -314,7 +295,42 @@ footer .social-links a {
     font-size: 1.2rem;
 }
 
+/* Defining font size classes */
+.fs-smallest {
+    font-size: 0.5rem !important;
+}
 
+.fs-less-significant {
+    font-size: 0.75em;
+}
+
+.fs-normal {
+    font-size: 1rem !important;
+}
+
+.fs-subtitle {
+    font-size: 1.2em;
+}
+
+.fs-title {
+    font-size: 1.5rem !important;
+}
+
+.fs-2 {
+    font-size: 2rem !important;
+}
+
+.fs-3 {
+    font-size: 3rem !important;
+}
+
+.fs-4 {
+    font-size: 4rem !important;
+}
+
+.fs-largest {
+    font-size: 6rem !important;
+}
 
 
 
