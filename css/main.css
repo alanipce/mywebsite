@@ -205,12 +205,14 @@ h1, h2, h3, h4, h5, h6 {
     -ms-transform: translateY(-50%);
 }
 
-.site-section.dark {
+.dark-background {
     background: #f0f2f1;
 }
 
 .site-section {
     padding: 30px 24px;
+    max-width: 960px;
+    margin: 0 auto;
     color: #707070;
 }
 
@@ -457,10 +459,6 @@ footer .social-links a {
 
 @media only screen and (min-width: 950px) {
     /* Style adjustments for viewports that meet the condition */
-    .site-section {
-        padding: 60px 15%;
-    }
-
     .site-section p.introduction {
         width: 75%;
         font-size: 1.4rem;
