@@ -295,6 +295,39 @@ footer .social-links a {
     font-size: 1.2rem;
 }
 
+.split-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.split-layout > .leading {
+    order: 1;
+    padding: 20px;
+}
+
+.split-layout > .trailing {
+    order: 2;
+    padding: 20px;
+}
+
+.button {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 10px 15px;
+    color: #65D1B7;
+    border: 2px solid #65D1B7;
+    text-decoration: none;
+}
+
+.button:hover {
+    background: #65D1B7;
+    color: #FFF;
+}
+
 /* Defining font size classes */
 .fs-smallest {
     font-size: 0.5rem !important;
@@ -309,7 +342,7 @@ footer .social-links a {
 }
 
 .fs-subtitle {
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 
 .fs-title {
@@ -433,6 +466,10 @@ footer .social-links a {
         font-size: 1.4rem;
         margin-top: 16rem;
         margin-bottom: 8rem;
+    }
+
+    .split-layout {
+        flex-direction: row;
     }
 }
 
