@@ -94,6 +94,13 @@ textarea {
 }
 
 /* ==========================================================================
+   Tingle overrides
+   ========================================================================== */
+.tingle-modal.smooth-transition {
+    transition: opacity 300ms ease-in, transform 300ms ease-in;
+}
+
+/* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
@@ -165,7 +172,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .work-item .content.scaled-effect {
-    transition: all .5s;
+    transition: all 300ms;
 }
 
 .work-item .overlay {
@@ -180,18 +187,18 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 100;
     visibility: hidden;
     opacity: 0;
-    transition: opacity 0.15s ease-in;
+    transition: opacity 300ms ease-in;
 }
 
-.work-item:hover .overlay {
+.work-item:hover .overlay, .work-item:focus .overlay {
     visibility: visible;
     opacity: 1;
 }
 
-.work-item:hover .content.scaled-effect {
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
+.work-item:hover .content.scaled-effect, .work-item:focus .content.scaled-effect {
+    transform: scale(1.125);
+    -webkit-transform: scale(1.125);
+    -ms-transform: scale(1.125);
 }
 
 .work-item .overlay > .centered {
@@ -366,9 +373,6 @@ footer .social-links a {
 .fs-largest {
     font-size: 6rem !important;
 }
-
-
-
 
 
 /* ==========================================================================
