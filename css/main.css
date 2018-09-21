@@ -330,6 +330,7 @@ footer .social-links a {
     color: #65D1B7;
     border: 2px solid #65D1B7;
     text-decoration: none;
+    white-space: nowrap;
 }
 
 .button:hover {
