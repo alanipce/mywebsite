@@ -231,8 +231,10 @@ h1, h2, h3, h4, h5, h6 {
     margin: 50px 0;
 }
 
-.site-section img {
+.site-section img.image-fill {
     width: 100%;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 .divider {
@@ -332,6 +334,10 @@ footer .social-links a {
     padding: 20px;
 }
 
+.split-layout > *.expand {
+    flex-grow: 1;
+}
+
 img.logo {
     display: inline-block;
     height: 50px;
@@ -395,6 +401,36 @@ img.logo {
     text-align: center;
 }
 
+.googleplay-badge, .site-section .googleplay-badge {
+    height: 65px;
+    width: auto;
+    padding: 0;
+}
+
+.appstore-badge, .site-section .appstore-badge {
+    height: 45px;
+    width: auto;
+    padding: 10px;
+}
+
+.with-divider {
+    display: block;
+    position: relative;
+    text-align: center;
+    padding: 10px;
+}
+
+.with-divider::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 5px;
+    width: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #65D1B7;
+}
+
 /* ==========================================================================
    Theming site content
    ========================================================================== */
@@ -431,6 +467,10 @@ img.logo {
     color: #11123C !important;
 }
 
+.with-divider.tumee-blue-color::after {
+    background: #11123C !important;
+}
+
 /* ==========================================================================
    Caseaide styles
    ========================================================================== */
@@ -439,6 +479,30 @@ img.logo {
     background-image: url(../img/caseaide-background.png);
 }
 
+.caseaide-blue {
+    color: #0C77E6 !important;    
+}
+
+.with-divider.caseaide-blue::after {
+    background: #0C77E6 !important;
+}
+
+.caseaide-blue-background {
+    background: #0C77E6 !important;
+}
+
+.caseaide-blue-background .site-section {
+    color: #D9D9D9;
+}
+
+.caseaide-blue-background .site-section h1,
+.caseaide-blue-background .site-section h2,
+.caseaide-blue-background .site-section h3,
+.caseaide-blue-background .site-section h4,
+.caseaide-blue-background .site-section h5,
+.caseaide-blue-background .site-section h6 {
+    color: #FFF;
+}
 
 /* ==========================================================================
    Helper classes
