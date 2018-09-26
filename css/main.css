@@ -249,7 +249,6 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-between;
-    align-items: center;
     margin: 20px -10px;
 }
 
@@ -264,6 +263,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .flex-list-item img {
     max-width: 460px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 footer {
