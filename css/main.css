@@ -415,6 +415,7 @@ img.logo {
 
 .with-divider {
     display: block;
+    color: #4A4A4A;
     position: relative;
     text-align: center;
     padding: 10px;
@@ -428,7 +429,7 @@ img.logo {
     width: 100px;
     left: 50%;
     transform: translateX(-50%);
-    background: #65D1B7;
+    background: #4A4A4A;
 }
 
 /* ==========================================================================
@@ -436,6 +437,30 @@ img.logo {
    ========================================================================== */
 .gray-background {
     background: #f0f2f1;
+}
+
+.dark-gray-background {
+    background: #464646;
+}
+
+.dark-gray-background .site-section {
+    color: #CCCCCC;
+}
+
+.dark-gray-background .with-divider {
+    color: #FFF;
+}
+.dark-gray-background .with-divider::after {
+    background: #FFF;
+}
+
+.dark-gray-background .site-section h1,
+.dark-gray-background .site-section h2,
+.dark-gray-background .site-section h3,
+.dark-gray-background .site-section h4,
+.dark-gray-background .site-section h5,
+.dark-gray-background .site-section h6 {
+    color: #FFF;
 }
 
 .black-background {
@@ -454,6 +479,14 @@ img.logo {
 .black-background .site-section h6 {
     color: #FFF;
 }
+
+.black-background .with-divider {
+    color: #FFF;
+}
+.black-background .with-divider::after {
+    background: #FFF;
+}
+
 
 /* ==========================================================================
    Tumee styles
@@ -479,11 +512,11 @@ img.logo {
     background-image: url(../img/caseaide-background.png);
 }
 
-.caseaide-blue {
+.caseaide-blue-color {
     color: #0C77E6 !important;    
 }
 
-.with-divider.caseaide-blue::after {
+.with-divider.caseaide-blue-color::after {
     background: #0C77E6 !important;
 }
 
@@ -502,6 +535,23 @@ img.logo {
 .caseaide-blue-background .site-section h5,
 .caseaide-blue-background .site-section h6 {
     color: #FFF;
+}
+
+.caseaide-blue-background .with-divider {
+    color: #FFF;
+}
+
+.caseaide-blue-background .with-divider::after {
+    background: #65D1B7;
+}
+
+
+/* ==========================================================================
+   CSUSB MAD styles
+   ========================================================================== */
+.csusb-background,
+.work-item.csusb-background {
+    background-image: url(../img/csusb-background.png);
 }
 
 /* ==========================================================================
