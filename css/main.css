@@ -121,6 +121,11 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
 }
 
+a {
+    color: #000;
+    font-weight: 650;
+}
+
 #brand-header {
     display: flex;
     flex-wrap: wrap;
@@ -211,13 +216,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .site-section {
-    box-sizing: content-box;
-    padding: 30px 24px;
-    max-width: 960px;
+    box-sizing: border-box;
+    padding: 30px;
+    max-width: 1020px;
     margin: 0 auto;
     color: #707070;
 }
-
+/* .site-section.with-full-page {
+    box-sizing: border-box;
+    min-height: 100vh;
+} */
 .site-section h1,
 .site-section h2,
 .site-section h3,
@@ -280,11 +288,6 @@ footer .contact {
     margin-bottom: 20px;
 }
 
-footer .contact a {
-    color: #000;
-    font-weight: 800;
-}
-
 footer .copyright {
     font-size: 0.75rem;
     padding: 10px 0;
@@ -304,6 +307,7 @@ footer .social-links a {
     font-size: 1rem;
     color: #707070;
     margin-right: 5px;
+    font-weight: normal;
 }
 
 .social-links a:last-of-type {
@@ -312,10 +316,6 @@ footer .social-links a {
 
 .social-links a:hover {
     color: rgba(0, 0, 0, 0.3);
-}
-
-.site-section p.introduction {
-    font-size: 1.2rem;
 }
 
 .split-layout {
@@ -416,11 +416,7 @@ img.logo {
 }
 
 .with-divider {
-    display: block;
-    color: #4A4A4A;
     position: relative;
-    text-align: center;
-    padding: 10px;
 }
 
 .with-divider::after {
@@ -433,6 +429,24 @@ img.logo {
     transform: translateX(-50%);
     background: #4A4A4A;
 }
+
+.site-section.with-divider::after {
+    height: 8px;
+    background: #65D1B7;
+}
+
+h1.with-divider,
+h2.with-divider,
+h3.with-divider,
+h4.with-divider,
+h5.with-divider,
+h6.with-divider {
+    text-align: center;
+    padding: 10px;
+    color: #4A4A4A;
+}
+
+
 
 /* ==========================================================================
    Theming site content
@@ -649,6 +663,10 @@ img.logo {
         font-size: 1.4rem;
         margin-top: 16rem;
         margin-bottom: 8rem;
+    }
+
+    .site-section.with-desktop-optimization {
+        min-height: 90vh;
     }
 
     .split-layout {
