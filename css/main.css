@@ -346,6 +346,13 @@ img.logo {
     width: auto;
 }
 
+.button-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
 .button {
     display: inline-block;
     font-size: 1rem;
@@ -672,6 +679,7 @@ h6.with-divider {
 
     .split-layout {
         flex-direction: row;
+        align-items: flex-start;
     }
 
     .flex-list {
