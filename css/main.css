@@ -321,7 +321,7 @@ footer .social-links a {
 .split-layout {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     margin-left: -20px;
     margin-right: -20px;
 }
@@ -336,8 +336,16 @@ footer .social-links a {
     padding: 20px;
 }
 
-.split-layout > *.expand {
+.fluid-item {
     flex-grow: 1;
+}
+
+.align-start {
+    align-items: flex-start !important;
+}
+
+.align-center {
+    align-items: center !important;
 }
 
 img.logo {
@@ -677,9 +685,17 @@ h6.with-divider {
         min-height: 90vh;
     }
 
+    .desktop-align-start {
+        align-items: flex-start !important;
+    }
+
+    .desktop-align-center {
+        align-items: center !important;
+    }
+
     .split-layout {
         flex-direction: row;
-        align-items: flex-start;
+        
     }
 
     .flex-list {
