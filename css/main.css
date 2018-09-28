@@ -12,7 +12,7 @@
 
 html {
     color: #222;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5;
 }
 
@@ -363,6 +363,11 @@ img.logo {
     width: auto;
 }
 
+.spacious {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
 .button-group {
     display: flex;
     flex-direction: column;
@@ -682,6 +687,9 @@ h6.with-divider {
    ========================================================================== */
 
 @media only screen and (min-width: 950px) {
+    html {
+        font-size: 16px;
+    }
     /* Style adjustments for viewports that meet the condition */
     .site-section .introduction {
         width: 75%;
@@ -704,7 +712,6 @@ h6.with-divider {
 
     .split-layout {
         flex-direction: row;
-        
     }
 
     .site-section .work-list {
@@ -717,6 +724,11 @@ h6.with-divider {
 
     .flex-list-item {
         width: 460px;
+    }
+
+    .spacious {
+        margin-top: 6rem;
+        margin-bottom: 6rem;
     }
 }
 
