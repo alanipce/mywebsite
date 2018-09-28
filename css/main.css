@@ -237,6 +237,11 @@ a {
     color: #4A4A4A;
 }
 
+.site-section .introduction {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
 .site-section img.image-fill {
     width: 100%;
     margin-top: 40px;
@@ -333,6 +338,23 @@ footer .social-links a {
 
 .align-center {
     align-items: center !important;
+}
+
+/* Source for responsive youtube container https://themeskills.com/make-embedded-youtube-videos-responsive-wordpress/ */
+.youtube-responsive-container {
+    position:relative;
+    padding-bottom:56.25%;
+    padding-top:30px;
+    height:0;
+    overflow:hidden;
+}
+
+.youtube-responsive-container iframe, .youtube-responsive-container object, .youtube-responsive-container embed {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
 }
 
 img.logo {
@@ -661,7 +683,7 @@ h6.with-divider {
 
 @media only screen and (min-width: 950px) {
     /* Style adjustments for viewports that meet the condition */
-    .site-section p.introduction {
+    .site-section .introduction {
         width: 75%;
         font-size: 1.4rem;
         margin-top: 16rem;
