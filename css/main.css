@@ -148,11 +148,20 @@ a {
     margin: 0 0 4px 0;
 }
 
+.work-list {
+    margin: 60px auto;
+}
+
 .work-item {
+    box-sizing: border-box;
+    display: block;
     position: relative;
-    height: 250px;
-    width: 450px;
-    margin: 12px;
+    width: 100%;
+
+    /* Trick to maintain a 5:2 aspect ratio where padding percentage is calculated with respect to width https://stackoverflow.com/questions/1495407/maintain-the-aspect-ratio-of-a-div-with-css */
+    padding-bottom: 40%;
+    border: none;
+    margin: 0 auto;
     background: lightgray;
     background-size: cover;
     overflow: hidden;
@@ -163,8 +172,8 @@ a {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    right: 0;
+    bottom: 0;
     background-size: cover;
 }
 
@@ -180,8 +189,8 @@ a {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    right: 0;
+    bottom: 0;
     padding: 20px;
     background: rgba(0, 0, 0, 0.75);
 
@@ -515,7 +524,7 @@ h6.with-divider {
    ========================================================================== */
 .tumee-background,
 .work-item.tumee-background {
-    background-image: url(../img/tumee-background-2.png);
+    background-image: url(../img/tumee-background.png);
 }
 
 .tumee-blue-color {
