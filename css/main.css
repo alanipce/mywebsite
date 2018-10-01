@@ -543,7 +543,7 @@ h6.with-divider {
    ========================================================================== */
 .tumee-background,
 .work-item.tumee-background {
-    background-image: url(../img/tumee-background.png);
+    background-image: url(../img/tumee-background.webp);
 }
 
 .tumee-blue-color {
@@ -559,7 +559,7 @@ h6.with-divider {
    ========================================================================== */
 .caseaide-background,
 .work-item.caseaide-background {
-    background-image: url(../img/caseaide-background.png);
+    background-image: url(../img/caseaide-background.webp);
 }
 
 .caseaide-blue-color {
@@ -601,7 +601,7 @@ h6.with-divider {
    ========================================================================== */
 .csusb-background,
 .work-item.csusb-background {
-    background-image: url(../img/csusb-background.png);
+    background-image: url(../img/csusb-background.webp);
 }
 
 /* ==========================================================================
