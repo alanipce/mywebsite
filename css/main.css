@@ -300,9 +300,9 @@ footer .social-links a {
 }
 
 .social-links a {
-    font-size: 1rem;
+    font-size: 1.8rem;
     color: #707070;
-    margin-right: 5px;
+    margin-right: 15px;
     font-weight: normal;
 }
 
@@ -735,6 +735,11 @@ h6.with-divider {
 
     .flex-list-item {
         width: 460px;
+    }
+
+    .social-links a {
+        font-size: 1.2rem;
+        margin-right: 10px;
     }
 }
 
