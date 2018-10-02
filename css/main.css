@@ -541,9 +541,14 @@ h6.with-divider {
 /* ==========================================================================
    Tumee styles
    ========================================================================== */
-.tumee-background,
-.work-item.tumee-background {
+.webp .tumee-background,
+.webp .work-item.tumee-background {
     background-image: url(../img/tumee-background.webp);
+}
+
+.no-webp .tumee-background,
+.no-webp .work-item.tumee-background {
+    background-image: url(../img/tumee-background.jpg);
 }
 
 .tumee-blue-color {
@@ -557,9 +562,14 @@ h6.with-divider {
 /* ==========================================================================
    Caseaide styles
    ========================================================================== */
-.caseaide-background,
-.work-item.caseaide-background {
+.webp .caseaide-background,
+.webp .work-item.caseaide-background {
     background-image: url(../img/caseaide-background.webp);
+}
+
+.no-webp .caseaide-background,
+.no-webp .work-item.caseaide-background {
+    background-image: url(../img/caseaide-background.jpg);
 }
 
 .caseaide-blue-color {
@@ -599,9 +609,14 @@ h6.with-divider {
 /* ==========================================================================
    CSUSB MAD styles
    ========================================================================== */
-.csusb-background,
-.work-item.csusb-background {
+.webp .csusb-background,
+.webp .work-item.csusb-background {
     background-image: url(../img/csusb-background.webp);
+}
+
+.no-webp .csusb-background,
+.no-webp .work-item.csusb-background {
+    background-image: url(../img/csusb-background.jpg);
 }
 
 /* ==========================================================================
