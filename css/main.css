@@ -128,8 +128,9 @@ a {
 
 #brand-header {
     display: flex;
-    flex-wrap: nowrap;
     flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 
 #brand-header h1 {
