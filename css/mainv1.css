@@ -389,3 +389,104 @@ blockquote {
     /* 35px / 24px */
   }
 }
+
+/* ==========================================================================
+   Custom styles
+   ========================================================================== */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #262626;
+  color: #C2C2C2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #FFF;
+}
+
+.site-section {
+  width: 100vw;
+}
+
+.site-section__safe-area {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 60px 80px;
+}
+
+.site-section--introduction {
+  background: #2B2B2B;
+}
+
+.hero__description {
+  max-width: 700px;
+  text-align: center;
+}
+.hero__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px 0px;  
+  z-index: 1; /* Create stacking context to position after element only behind the hero content */ 
+}
+
+.hero__content::after {
+  content: "";
+  background-image: url(/img/hero-illustration.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: contain;
+  opacity: 0.05;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.hero__cta {
+  padding: 15px 30px;
+  margin-top: 60px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.75rem;
+  background: #5FD6B3;
+  color: #2B2B2B;
+  border: none;
+}
+
+.site-section__safe-area .brand-header {
+  margin-top: -25px;
+}
+
+.brand-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.brand-header__logo {
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #C2C2C2;
+  text-decoration: none;
+}
+
+.brand-header__social-links a {
+  font-size: 1.5rem;
+  margin-right: 24px;
+  color: #C2C2C2;
+  text-decoration: none;
+}
+
+.brand-header__social-links a:last-child {
+  margin-right: 0;
+}
+
+.emphasize {
+  font-weight: bold;
+}
