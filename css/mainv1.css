@@ -196,6 +196,10 @@ textarea {
   display: none !important;
 }
 
+.emphasize {
+  font-weight: bold;
+}
+
 /*
 * Hide only visually, but have it available for screen readers:
 * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
@@ -275,7 +279,7 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2
   font-size-adjust: 0.5;
 }
 
-body {
+body, .content {
   font-size: 1rem;
   /* equivalent to 16px */
   line-height: 1.25;
@@ -283,7 +287,7 @@ body {
 }
 
 @media (min-width: 43.75rem) {
-  body {
+  body, .content {
     font-size: 1rem;
     /* equivalent to 16px */
     line-height: 1.375;
@@ -291,7 +295,7 @@ body {
   }
 }
 
-h1 {
+h1, .h1 {
   font-size: 2rem;
   /* 2x body copy size = 32px */
   line-height: 1.25;
@@ -299,7 +303,7 @@ h1 {
 }
 
 @media (min-width: 43.75rem) {
-  h1 {
+  h1, .h1 {
     font-size: 2.5rem;
     /* 2.5x body copy size = 40px */
     line-height: 1.125;
@@ -307,7 +311,7 @@ h1 {
 }
 
 @media (min-width: 56.25rem) {
-  h1 {
+  h1, .h1 {
     font-size: 3rem;
     /* 3x body copy size = 48px */
     line-height: 1.05;
@@ -315,7 +319,7 @@ h1 {
   }
 }
 
-h2 {
+h2, .h2 {
   font-size: 1.625rem;
   /* 1.625x body copy size = 26px */
   line-height: 1.15384615;
@@ -323,7 +327,7 @@ h2 {
 }
 
 @media (min-width: 43.75rem) {
-  h2 {
+  h2, .h2 {
     font-size: 2rem;
     /* 2x body copy size = 32px */
     line-height: 1.25;
@@ -331,14 +335,14 @@ h2 {
 }
 
 @media (min-width: 56.25rem) {
-  h2 {
+  h2, .h2 {
     font-size: 2.25rem;
     /* 2.25x body copy size = 36px */
     line-height: 1.25;
   }
 }
 
-h3 {
+h3, .h3 {
   font-size: 1.375rem;
   /* 1.375x body copy size = 22px */
   line-height: 1.13636364;
@@ -346,7 +350,7 @@ h3 {
 }
 
 @media (min-width: 43.75rem) {
-  h3 {
+  h3, .h3 {
     font-size: 1.5rem;
     /* 1.5x body copy size = 24px */
     line-height: 1.25;
@@ -354,21 +358,21 @@ h3 {
 }
 
 @media (min-width: 56.25rem) {
-  h3 {
+  h3, .h3 {
     font-size: 1.75rem;
     /* 1.75x body copy size = 28px */
     line-height: 1.25;
   }
 }
 
-h4 {
+h4, .h4 {
   font-size: 1.125rem;
   /* 1.125x body copy size = 18px */
   line-height: 1.11111111;
 }
 
 @media (min-width: 43.75rem) {
-  h4 {
+  h4, .h4 {
     line-height: 1.22222222;
     /* (22px / 18px */
   }
@@ -415,6 +419,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 60px 80px;
 }
 
+/* Introduction section styles */
 .site-section--introduction {
   background: #2B2B2B;
 }
@@ -448,6 +453,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero__cta {
+  cursor: pointer;
   padding: 15px 30px;
   margin-top: 60px;
   text-transform: uppercase;
@@ -487,6 +493,46 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: 0;
 }
 
-.emphasize {
-  font-weight: bold;
+
+/* Work Experience section styling */
+.site-section--work-experience {
+  background: #262626;
+}
+.work {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.work__item {
+  width: calc(50% - 16px);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-bottom: 48px;
+}
+
+.work__company {
+  order: 2;
+  font-size: 10px;
+  margin: 12px 0 0;
+  text-transform: uppercase;
+}
+
+.work__description {
+  order: 3;
+  margin: 0;
+}
+
+.work__illustration {
+  display: block;
+  width: 100%;
+
+  /* 3/4 aspect ratio */
+  padding-bottom: 75%;
+  cursor: pointer;
+  order: 1;
+  background: #444;
+  border: none;
 }
