@@ -432,8 +432,13 @@ a {
 }
 
 /* Outro section styles */
-.site-section--outro {
+.brand-footer {
   background: #232323;
+}
+
+.brand-footer__content.content-area {
+  padding-bottom: 48px;
+  padding-top: 48px;
 }
 
 .brand-footer__contact {
@@ -445,7 +450,7 @@ a {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 30px 0;
+  padding: 32px 0;
 }
 .brand-footer__social-links a {
   display: block;
@@ -472,7 +477,7 @@ a {
 .brand-footer__copyright {
   font-size: 12px;
   text-align: center;
-  margin-top: 45px;
+  margin-top: 48px;
 }
 
 /* ==========================================================================
