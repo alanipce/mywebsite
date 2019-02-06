@@ -293,13 +293,15 @@ a {
 }
 
 .site-section {
+  box-sizing: border-box;
   width: 100vw;
+  padding: 60px 80px;
 }
 
-.site-section__safe-area {
+.content-area {
+  width: 100%;
   max-width: 1024px;
   margin: 0 auto;
-  padding: 60px 80px;
 }
 
 /* Introduction section styles */
@@ -307,8 +309,12 @@ a {
   background: #2B2B2B;
 }
 
+.hero__headline {
+  padding: 0;
+  margin: 0;
+}
 .hero__description {
-  max-width: 700px;
+  max-width: 600px;
   text-align: center;
 }
 .hero__content {
@@ -338,7 +344,7 @@ a {
 .hero__cta {
   cursor: pointer;
   padding: 15px 30px;
-  margin-top: 60px;
+  margin-top: 40px;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 0.75rem;
@@ -347,14 +353,15 @@ a {
   border: none;
 }
 
-.site-section__safe-area .brand-header {
-  margin-top: -25px;
+.brand-header {
+  background: #2B2B2B;
+  padding: 30px;
 }
 
-.brand-header {
+.brand-header__content {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -366,7 +373,8 @@ a {
 }
 
 .brand-header__social-links a {
-  font-size: 1.5rem;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
   margin-right: 24px;
   color: #AAA;
   text-decoration: none;
@@ -472,7 +480,7 @@ a {
 
 }
 @media screen and (max-width: 768px) { 
-  .site-section__safe-area {
+  .site-section {
     padding: 32px 40px;
   }
 
@@ -494,7 +502,9 @@ a {
 }
 
 @media screen and (max-width: 480px) { 
-
+  .hero__content {
+    padding: 30px 0;
+  }
 }
 
 /* ==========================================================================
