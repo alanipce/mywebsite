@@ -293,15 +293,15 @@ a {
 }
 
 .site-section {
-  box-sizing: border-box;
   width: 100vw;
-  padding: 60px 80px;
 }
 
 .content-area {
+  box-sizing: border-box;
   width: 100%;
   max-width: 1024px;
   margin: 0 auto;
+  padding: 40px 80px;
 }
 
 /* Introduction section styles */
@@ -322,7 +322,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 70px 0px;  
+  padding: 50px 0px 80px;
   z-index: 1; /* Create stacking context to position after element only behind the hero content */ 
 }
 
@@ -355,7 +355,6 @@ a {
 
 .brand-header {
   background: #2B2B2B;
-  padding: 30px;
 }
 
 .brand-header__content {
@@ -365,11 +364,14 @@ a {
   justify-content: space-between;
 }
 
+.brand-header__content.content-area {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .brand-header__logo {
-  font-size: 1.5rem;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #AAA;
-  text-decoration: none;
+  position: relative;
+  height: 40px;
 }
 
 .brand-header__social-links a {
@@ -480,8 +482,8 @@ a {
 
 }
 @media screen and (max-width: 768px) { 
-  .site-section {
-    padding: 32px 40px;
+  .content-area {
+    padding: 30px 40px;
   }
 
   .hero__content {
@@ -503,7 +505,7 @@ a {
 
 @media screen and (max-width: 480px) { 
   .hero__content {
-    padding: 30px 0;
+    padding: 0px 0px 30px;
   }
 }
 
