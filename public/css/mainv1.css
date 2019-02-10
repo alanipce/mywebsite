@@ -321,8 +321,8 @@ a {
 }
 
 .content-area {
-  box-sizing: border-box;
-  width: 100%;
+  display: block;
+  box-sizing: content-box;
   max-width: 1024px;
   margin: 0 auto;
   padding: 40px 80px;
@@ -366,24 +366,24 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 128px 0;
+  padding: 232px 0;
   z-index: 1; /* Create stacking context to position after element only behind the hero content */ 
 }
 
-/* .hero__content::after {
+.hero__content::after {
   content: "";
   background-image: url(/img/hero-illustration.svg);
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: contain;
   opacity: 0.1;
-  top: 0;
   left: 0;
   bottom: 0;
   right: 0;
+  top: 0;
   position: absolute;
   z-index: -1;
-} */
+}
 
 .hero__cta {
   display: flex;
@@ -425,17 +425,16 @@ a {
   height: 10px;
 }
 
-.brand-header__social-links a {
+.brand-header__links a {
   font-size: 12px;
   font-family: 'Montserrat', sans-serif;
   margin-right: 24px;
   text-decoration: none;
 }
 
-.brand-header__social-links a:last-child {
+.brand-header__links a:last-child {
   margin-right: 0;
 }
-
 
 /* Work Experience section styling */
 .site-section--work-experience {
@@ -556,10 +555,6 @@ a {
 
   .hero__cta {
     margin-top: 48px;
-  }
-
-  .hero__content::after {
-    opacity: 0.05;
   }
   
   .hero__description {
