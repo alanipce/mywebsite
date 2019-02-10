@@ -286,6 +286,13 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   color: #404040;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -302,10 +309,11 @@ a {
   color: #404040;
   border: none;
   background: transparent;
+  border-radius: 5px;
 }
+
 .button.primary {
   background: #5FD6B3;
-  border-radius: 5px;
 }
 
 .site-section {
@@ -317,23 +325,22 @@ a {
   width: 100%;
   max-width: 1024px;
   margin: 0 auto;
-  padding: 64px 80px;
+  padding: 40px 80px;
+}
+
+.content-area--with-divider::before {
+  position: relative;
+  display: block;
+  top: -40px;
+  content: "";
+  width: 80px;
+  height: 8px;
+  background: #C4C4C4;
 }
 
 /* Introduction section styles */
 .site-section--introduction {
   position: relative;
-}
-
-.site-section--introduction::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 8px;
-  background: #5FD6B3;
 }
 
 .hero__thumbnail {
@@ -537,6 +544,10 @@ a {
 @media screen and (max-width: 768px) { 
   .content-area {
     padding: 30px 40px;
+  }
+
+  .content-area--with-divider::before {
+    top: -30px;
   }
 
   .hero__content {
