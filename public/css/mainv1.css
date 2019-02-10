@@ -317,7 +317,7 @@ a {
   width: 100%;
   max-width: 1024px;
   margin: 0 auto;
-  padding: 40px 80px;
+  padding: 64px 80px;
 }
 
 /* Introduction section styles */
@@ -345,9 +345,11 @@ a {
 .hero__headline {
   padding: 0;
   margin: 0;
+  text-align: center;
 }
 .hero__description {
-  max-width: 600px;
+  margin: 16px 0 0;
+  max-width: 750px;
   text-align: center;
 }
 
@@ -356,7 +358,8 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px 0px 80px;
+  justify-content: center;
+  padding: 128px 0;
   z-index: 1; /* Create stacking context to position after element only behind the hero content */ 
 }
 
@@ -379,7 +382,7 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  margin-top: 40px;
+  margin-top: 64px;
 }
 
 .hero__cta .button {
@@ -537,7 +540,11 @@ a {
   }
 
   .hero__content {
-    align-items: flex-start;
+    padding: 96px 40px;
+  }
+
+  .hero__cta {
+    margin-top: 48px;
   }
 
   .hero__content::after {
@@ -545,7 +552,7 @@ a {
   }
   
   .hero__description {
-    text-align: start;
+    
   }
 
   .work__item {
@@ -558,14 +565,12 @@ a {
 }
 
 @media screen and (max-width: 480px) { 
-  .hero__content {
-    padding: 0px 0px 30px;
-  }
+  
 }
 
 /* ==========================================================================
   Responsive typepography sizing adapted from http://typecast.com/blog/a-more-modern-scale-for-web-typography
-  ========================================================================== */
+  ========================================================================== */  
 body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2, h3, h4, h5, h6 {
   font-size-adjust: 0.5;
 }
@@ -586,7 +591,26 @@ body, .content {
   }
 }
 
-h1, .h1 {
+.hero__description {
+  font-size: 1.125rem;
+  line-height: 1.11111111;
+}
+
+@media (min-width: 43.75rem) {
+  .hero__description {
+    font-size: 1.375rem;
+    line-height: 1.25;
+  }
+}
+
+@media (min-width: 56.25rem) {
+  .hero__description {
+    font-size: 1.5rem;
+    line-height: 1.25;
+  }
+}
+
+h1, .h1, .hero__headline {
   font-size: 2rem;
   /* 2x body copy size = 32px */
   line-height: 1.25;
@@ -594,7 +618,7 @@ h1, .h1 {
 }
 
 @media (min-width: 43.75rem) {
-  h1, .h1 {
+  h1, .h1, .hero__headline {
     font-size: 2.5rem;
     /* 2.5x body copy size = 40px */
     line-height: 1.125;
@@ -602,7 +626,7 @@ h1, .h1 {
 }
 
 @media (min-width: 56.25rem) {
-  h1, .h1 {
+  h1, .h1, .hero__headline {
     font-size: 3rem;
     /* 3x body copy size = 48px */
     line-height: 1.05;
