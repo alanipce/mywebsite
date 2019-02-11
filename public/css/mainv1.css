@@ -534,6 +534,13 @@ a {
   background-repeat: no-repeat;
 }
 
+.work__illustration--csusb::after {
+  background: url(/img/csusb-banner.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 /* Outro section styles */
 .brand-footer {
   background: #232323;
