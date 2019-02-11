@@ -615,10 +615,6 @@ a {
   .hero__cta {
     margin-top: 48px;
   }
-  
-  .hero__description {
-    
-  }
 
   .work__item {
     width: 100%;
@@ -654,7 +650,17 @@ a {
 }
 
 @media screen and (max-width: 480px) { 
-  
+  .hero__content {
+    align-items: flex-start;
+  }
+
+  .hero__headline {
+    text-align: start;
+  }
+
+  .hero__description {
+    text-align: start;
+  }
 }
 
 /* ==========================================================================
