@@ -428,12 +428,29 @@ a {
 .brand-header__links a {
   font-size: 12px;
   font-family: 'Montserrat', sans-serif;
+  color: #808080;
   margin-right: 24px;
   text-decoration: none;
 }
 
 .brand-header__links a:last-child {
   margin-right: 0;
+}
+
+.brand-header__linkedin::before {
+  content: "Linkedin";
+}
+
+.brand-header__github::before {
+  content: "Github";
+}
+
+.brand-header__stackoverflow::before {
+  content: "StackOverflow";
+}
+
+.brand-header__hackerrank::before {
+  content: "Hackerrank";
 }
 
 /* Work Experience section styling */
@@ -605,6 +622,30 @@ a {
     flex-direction: column;
     flex-wrap: nowrap;
     margin-bottom: 48px;
+  }
+
+  .brand-header__linkedin::before {
+    font-family: 'Font Awesome 5 Brands';
+    font-size: 1.25rem;
+    content: "\f0e1";
+  }
+  
+  .brand-header__github::before {
+    font-family: 'Font Awesome 5 Brands';
+    font-size: 1.25rem;
+    content: "\f09b";
+  }
+  
+  .brand-header__stackoverflow::before {
+    font-family: 'Font Awesome 5 Brands';
+    font-size: 1.25rem;
+    content: "\f16c";
+  }
+  
+  .brand-header__hackerrank::before {
+    font-family: 'Font Awesome 5 Brands';
+    font-size: 1.25rem;
+    content: "\f5f7";
   }
 }
 
