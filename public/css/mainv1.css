@@ -366,7 +366,8 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 232px 0;
+  /* Goes under the header with bottom padding of 30px, so visually it might appear there is more padding on the bottom. Need to compensate by adding on top or reducing on bottom. */
+  padding: 232px 0 202px;
   z-index: 1; /* Create stacking context to position after element only behind the hero content */ 
 }
 
@@ -409,10 +410,12 @@ a {
 }
 
 .brand-header__content {
+  height: 100%;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
+  align-items: center;
 }
 
 .brand-header__content.content-area {
@@ -600,8 +603,9 @@ a {
     top: -30px;
   }
 
+  /* Goes under the header so visually it might appear there is more padding on the bottom. Need to compensate by adding padding on top or reducing on bottom. */
   .hero__content {
-    padding: 96px 40px;
+    padding: 126px 40px 96px;
   }
 
   .hero__content::after {
