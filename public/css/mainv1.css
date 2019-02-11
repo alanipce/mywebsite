@@ -325,13 +325,13 @@ a {
   box-sizing: content-box;
   max-width: 1024px;
   margin: 0 auto;
-  padding: 40px 80px;
+  padding: 64px 80px;
 }
 
 .content-area--with-divider::before {
   position: relative;
   display: block;
-  top: -40px;
+  top: -64px;
   content: "";
   width: 80px;
   height: 8px;
@@ -370,7 +370,7 @@ a {
   z-index: 1; /* Create stacking context to position after element only behind the hero content */ 
 }
 
-/* .hero__content::after {
+.hero__content::after {
   content: "";
   background-image: url(/img/hero-illustration.svg);
   background-repeat: no-repeat;
@@ -383,7 +383,7 @@ a {
   top: 64px;
   position: absolute;
   z-index: -1;
-} */
+}
 
 .hero__cta {
   display: flex;
@@ -422,7 +422,7 @@ a {
 
 .brand-header__logo {
   position: relative;
-  height: 10px;
+  height: 12px;
 }
 
 .brand-header__links a {
@@ -438,7 +438,7 @@ a {
 
 /* Work Experience section styling */
 .site-section--work-experience {
-  
+  background: #ededed;
 }
 .work {
   display: flex;
@@ -472,12 +472,46 @@ a {
   display: block;
   width: 100%;
 
+  position: relative;
+  overflow: hidden;
+
   /* 3/4 aspect ratio */
   padding-bottom: 75%;
   cursor: pointer;
   order: 1;
   background: #444;
   border: none;
+}
+
+.work__illustration::after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  transition: transform 300ms ease-out;
+}
+
+.work__illustration:hover::after {
+  transform: scale(1.125);
+  -webkit-transform: scale(1.125);
+  -ms-transform: scale(1.125);
+}
+
+.work__illustration--caseaide::after {
+  background: url(/img/caseaide-banner.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.work__illustration--tumee::after {
+  background: url(/img/tumee-banner.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* Outro section styles */
@@ -551,6 +585,10 @@ a {
 
   .hero__content {
     padding: 96px 40px;
+  }
+
+  .hero__content::after {
+    content: none;
   }
 
   .hero__cta {
