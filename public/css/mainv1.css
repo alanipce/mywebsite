@@ -458,7 +458,7 @@ a {
 
 /* Work Experience section styling */
 .site-section--work-experience {
-  background: #ededed;
+  /* background: #ededed; */
 }
 .work {
   display: flex;
@@ -476,15 +476,19 @@ a {
   margin-bottom: 48px;
 }
 
-.work__company {
+.work__info {
   order: 2;
+  padding: 1rem;
+  background: #FFFFFF;
+}
+
+.work__company {
   font-size: 12px;
-  margin: 12px 0 4px;
   text-transform: uppercase;
+  margin-bottom: 4px;
 }
 
 .work__description {
-  order: 3;
   margin: 0;
 }
 
