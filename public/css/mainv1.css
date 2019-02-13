@@ -592,8 +592,8 @@ a {
 }
 
 .brand-footer__social-hover-dim-effect:hover a {
-  color: rgb(168, 168, 168);
-  border-color: rgb(168, 168, 168);
+  color: #8c8c8c;
+  border-color: #8c8c8c;
 }
 
 .brand-footer__social-links a:hover {
