@@ -94,21 +94,6 @@ textarea {
 }
 
 /* ==========================================================================
-   Tingle overrides
-   ========================================================================== */
-   .tingle-modal.smooth-transition {
-    transition: opacity 300ms ease-in, transform 300ms ease-in;
-}
-
-.tingle-modal-box__content {
-    padding: 0;
-}
-
-.tingle-modal-box__content .site-section {
-    padding: 3rem;
-}
-
-/* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
    https://www.phpied.com/delay-loading-your-print-css/
@@ -313,29 +298,37 @@ a {
 }
 
 .button.primary {
-  background: #5FD6B3;
+  background: #404040;
+  color: #F5F5F5;
 }
 
 .site-section {
   width: 100vw;
 }
 
+.site-section__title {
+  display: inline-block;
+  position: relative;
+}
+
+.site-section__title::after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: -12px;
+  height: 6px;
+  width: 64px;
+  background: #5FD6B3;
+
+}
+
 .content-area {
   display: block;
   box-sizing: content-box;
-  max-width: 1024px;
+  max-width: 1296px;
   margin: 0 auto;
-  padding: 64px 80px;
-}
-
-.content-area--with-divider::before {
-  position: relative;
-  display: block;
-  top: -64px;
-  content: "";
-  width: 80px;
-  height: 8px;
-  background: #C4C4C4;
+  padding: 80px;
 }
 
 /* Introduction section styles */
@@ -368,22 +361,6 @@ a {
   justify-content: center;
   /* Goes under the header with bottom padding of 30px, so visually it might appear there is more padding on the bottom. Need to compensate by adding on top or reducing on bottom. */
   padding: 232px 0 202px;
-  z-index: 1; /* Create stacking context to position after element only behind the hero content */ 
-}
-
-.hero__content::after {
-  content: "";
-  background-image: url(/img/hero-illustration.svg);
-  background-repeat: no-repeat;
-  background-position: bottom right;
-  background-size: contain;
-  opacity: 0.05;
-  left: 0;
-  bottom: 64px;
-  right: 0;
-  top: 64px;
-  position: absolute;
-  z-index: -1;
 }
 
 .hero__cta {
@@ -432,8 +409,13 @@ a {
   font-size: 12px;
   font-family: 'Montserrat', sans-serif;
   color: #808080;
-  margin-right: 24px;
+  margin-right: 8px;
   text-decoration: none;
+  padding: 8px 12px;
+}
+
+.brand-header__links a:hover {
+  border-bottom: 4px solid #5FD6B3;
 }
 
 .brand-header__links a:last-child {
@@ -458,7 +440,7 @@ a {
 
 /* Work Experience section styling */
 .site-section--work-experience {
-  /* background: #ededed; */
+  background: #ebebeb;
 }
 .work {
   display: flex;
@@ -474,15 +456,16 @@ a {
   flex-direction: column;
   flex-wrap: nowrap;
   margin-bottom: 48px;
+  background: #FFFFFF;
 }
 
 .work__info {
   order: 2;
-  padding: 1rem;
-  background: #FFFFFF;
+  padding: 24px;
 }
 
 .work__company {
+  color: #808080;
   font-size: 12px;
   text-transform: uppercase;
   margin-bottom: 4px;
@@ -490,6 +473,9 @@ a {
 
 .work__description {
   margin: 0;
+  color: #404040;
+  font-weight: 400;
+  font-size: 1.2rem;
 }
 
 .work__illustration {
@@ -555,9 +541,29 @@ a {
   color: #FFF;
 }
 
+.brand-footer__content {
+  position: relative;
+  z-index: 1; /* Create stacking context to position after element only behind the brand header content */ 
+}
+
 .brand-footer__content.content-area {
-  padding-bottom: 48px;
-  padding-top: 48px;
+  padding-bottom: 80px;
+  padding-top: 80px;
+}
+
+.brand-footer__content::after {
+  content: "";
+  background-image: url(/img/hero-illustration.svg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: contain;
+  opacity: 0.05;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  position: absolute;
+  z-index: -1;
 }
 
 .brand-footer__contact {
@@ -567,25 +573,32 @@ a {
 .brand-footer__social-links {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: center;
-  align-items: center;
-  padding: 32px 0;
+  padding: 48px 0;
 }
+
 .brand-footer__social-links a {
-  display: block;
+  display: inline-block;
   width: 45px;
   height: 45px;
   line-height: 45px;
   font-size: 20px;
-  margin-right: 40px;
+  margin-right: 24px;
   color: #FFF;
-  border: 1px solid #AAA;
+  border: 1px solid #FFF;
   border-radius: 50%;
   text-align: center;
 }
 
+.brand-footer__social-hover-dim-effect:hover a {
+  color: rgb(168, 168, 168);
+  border-color: rgb(168, 168, 168);
+}
+
 .brand-footer__social-links a:hover {
-  background: #FFF;
+  border-color: #5FD6B3;
+  background: #5FD6B3;
   color: #232323;
 }
 
@@ -596,7 +609,7 @@ a {
 .brand-footer__copyright {
   font-size: 12px;
   text-align: center;
-  margin-top: 48px;
+  margin-top: 64px;
 }
 
 /* ==========================================================================
@@ -607,11 +620,8 @@ a {
 }
 @media screen and (max-width: 768px) { 
   .content-area {
-    padding: 30px 40px;
-  }
-
-  .content-area--with-divider::before {
-    top: -30px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   /* Goes under the header so visually it might appear there is more padding on the bottom. Need to compensate by adding padding on top or reducing on bottom. */
@@ -763,7 +773,7 @@ h2, .h2 {
   }
 }
 
-h3, .h3 {
+h3, .h3, .site-section__title {
   font-size: 1.375rem;
   /* 1.375x body copy size = 22px */
   line-height: 1.13636364;
@@ -771,7 +781,7 @@ h3, .h3 {
 }
 
 @media (min-width: 43.75rem) {
-  h3, .h3 {
+  h3, .h3, .site-section__title {
     font-size: 1.5rem;
     /* 1.5x body copy size = 24px */
     line-height: 1.25;
@@ -779,7 +789,7 @@ h3, .h3 {
 }
 
 @media (min-width: 56.25rem) {
-  h3, .h3 {
+  h3, .h3, .site-section__title {
     font-size: 1.75rem;
     /* 1.75x body copy size = 28px */
     line-height: 1.25;
