@@ -284,24 +284,6 @@ a {
   color: #404040;
 }
 
-.button {
-  display: block;
-  cursor: pointer;
-  padding: 15px 30px;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 0.75rem;
-  color: #404040;
-  border: none;
-  background: transparent;
-  border-radius: 5px;
-}
-
-.button.primary {
-  background: #404040;
-  color: #F5F5F5;
-}
-
 .site-section {
   width: 100vw;
 }
@@ -334,6 +316,8 @@ a {
 /* Introduction section styles */
 .site-section--introduction {
   position: relative;
+  background: #232323;
+  color: #C2C2C2;
 }
 
 .hero__thumbnail {
@@ -346,11 +330,13 @@ a {
   padding: 0;
   margin: 0;
   text-align: center;
+  color: #FFFFFF;
 }
 .hero__description {
   margin: 16px 0 0;
   max-width: 750px;
   text-align: center;
+  color: #C2C2C2;
 }
 
 .hero__content {
@@ -363,18 +349,44 @@ a {
   padding: 232px 0 202px;
 }
 
-.hero__cta {
+.hero__actions {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   margin-top: 64px;
 }
 
-.hero__cta .button {
-  margin-right: 1rem;
+.hero__button {
+  display: block;
+  cursor: pointer;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.75rem;
+  border: none;
+  color: #C2C2C2;
+  background: transparent;
+  border-radius: 5px;
+  margin-right: 8px;
 }
 
-.hero__cta .button:last-child {
+.hero__button:hover {
+  color: #5FD6B3;
+}
+
+.hero__button--cta {
+  border: none;
+  background: #5FD6B3;
+  color: #232323;
+}
+
+.hero__button--cta:hover {
+  color: #232323;
+  background: #2fb68e;
+}
+
+
+.hero__button:last-child {
   margin-right: 0;
 }
 
@@ -408,18 +420,13 @@ a {
 .brand-header__links a {
   font-size: 12px;
   font-family: 'Montserrat', sans-serif;
-  color: #808080;
-  margin-right: 8px;
+  color: #C2C2C2;
   text-decoration: none;
   padding: 8px 12px;
 }
 
 .brand-header__links a:hover {
-  border-bottom: 4px solid #5FD6B3;
-}
-
-.brand-header__links a:last-child {
-  margin-right: 0;
+  color: #5FD6B3;
 }
 
 .brand-header__linkedin::before {
@@ -627,14 +634,6 @@ a {
   /* Goes under the header so visually it might appear there is more padding on the bottom. Need to compensate by adding padding on top or reducing on bottom. */
   .hero__content {
     padding: 126px 40px 96px;
-  }
-
-  .hero__content::after {
-    content: none;
-  }
-
-  .hero__cta {
-    margin-top: 48px;
   }
 
   .work__item {
