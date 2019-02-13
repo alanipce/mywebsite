@@ -709,20 +709,20 @@ body, .content {
 
 .hero__description {
   font-size: 1.125rem;
-  line-height: 1.11111111;
+  line-height: 1.5;
 }
 
 @media (min-width: 43.75rem) {
   .hero__description {
     font-size: 1.375rem;
-    line-height: 1.25;
+    line-height: 1.7;
   }
 }
 
 @media (min-width: 56.25rem) {
   .hero__description {
     font-size: 1.5rem;
-    line-height: 1.25;
+    line-height: 1.7;
   }
 }
 
