@@ -19,77 +19,54 @@
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
-  <header class="brand-header">
-    <div class="brand-header__content content-area">
-      <a href="#"><img class="brand-header__logo" src="img/logo.svg" alt="Alan Perez"></a>
-      <div class="brand-header__links">
-        <a href="https://www.linkedin.com/in/alanipce/" target="_black" aria-label="Linkedin"><span aria-hidden="true" class="brand-header__linkedin"></span></a>
-        <a href="https://github.com/alanipce" target="_black" aria-label="Github"><span aria-hidden="true" class="brand-header__github"></span></a>
-        <a href="mailto:alanipce@gmail.com" target="_black" aria-label="Stack overflow"><span aria-hidden="true" class="brand-header__stackoverflow"></span></a>
-        <a href="mailto:alanipce@gmail.com" target="_black" aria-label="Hacker rank"><span aria-hidden="true" class="brand-header__hackerrank"></span></a>
-      </div>
-    </div>
-  </header>
-
   <!-- Introduction section -->
-  <section class="site-section site-section--introduction">
-    <div class="hero">
-      <div class="hero__content">
-        <img class="hero__thumbnail" src="img/me.jpg" alt="Picture of Alan Perez">
-        <h1 class="hero__headline">Mobile App Developer</h1>
-        <p class="hero__description">Independent developer with over five years of experience in learning, solving problems, and building user interfaces.</p>
-        <div class="hero__actions">
-          <button class="hero__button hero__button--cta">Contact me</button>
-          <button class="hero__button">My Resume</button>
+  <section class="site-section site-section--white site-section--expanded site-section--collapse">
+    <div class="content-area">
+      <div class="header">
+        <div class="header__me">
+            <h1 class="header__name">Alan Perez</h1>
+            <div class="header__title">Mobile App Developer</div>
         </div>
+        <div class="header__links">
+          <a href="#">Download Resume</a>
+        </div>
+      </div>
+      <div class="hero">
+          <img class="hero__headshot" src="img/me.jpg">
+          <p class="hero__description">I am an independent developer that specializes in building mobile app experiences. Follow my professional journey below or contact me if interested in working together.</p>
+          <div class="hero__actions">
+            <button class="hero__button hero__button--cta">Contact me</button>
+          </div>
       </div>
     </div>
   </section>
   
   <!-- Work experience section -->
-  <section class="site-section site-section--work-experience">
+  <section class="site-section">
     <div class="content-area">
-      <h2 class="site-section__title">Work Experience</h2>
-      <div class="work">
-        <div class="work__item">
-            <div class="work__info">
-                <h3 class="work__company">Consultant at CaseAide (2015-)</h3>
-                <p class="work__description">Assisting Social Service Professionals with case management.</p>
-            </div>
-            <button class="work__illustration work__illustration--caseaide" aria-label="Click to view"></button>
-        </div>
-        <div class="work__item">
-            <div class="work__info">
-              <h3 class="work__company">Developer at TuMee (Oct 2015 – Nov 2017)</h3>
-              <p class="work__description">Crowd sourced delivery logistics platform.</p>
-            </div>
-            <button class="work__illustration work__illustration--tumee" aria-label="Click to view"></button>
-        </div>
-        <div class="work__item">
-            <div class="work__info">
-              <h3 class="work__company">Intern at CSUSB (June 2013 – Aug 2015)</h3>
-              <p class="work__description">Mobile apps developed for students by students.</p>
-            </div>
-            <button class="work__illustration work__illustration--csusb" aria-label="Click to view"></button>
-        </div>
-      </div>
+      <button class="work work--caseaide" aria-label="Click to view"></button>
+      <button class="work work--tumee" aria-label="Click to view"></button>
+      <button class="work work--csusb" aria-label="Click to view"></button>
     </div>
   </section>
 
-  <footer class="brand-footer">
-    <div class="brand-footer__content content-area">
-      <div class="brand-footer__contact h4">To get in touch, contact me at <a class="emphasize" href="mailto:alanipce@gmail.com">alanipce@gmail.com</a></div>
-      <div class="brand-footer__social-links">
-          <div class="brand-footer__social-hover-dim-effect">
-            <a href="https://www.linkedin.com/in/alanipce/" target="_black"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/alanipce" target="_black"><i class="fab fa-github"></i></a>
-            <a href="mailto:alanipce@gmail.com" target="_black"><i class="fab fa-stack-overflow"></i></a>
-            <a href="mailto:alanipce@gmail.com" target="_black"><i class="fab fa-hackerrank"></i></a>
+  <!-- Closing section -->
+  <section class="site-section site-section--dark">
+    <div class="content-area">
+        <div class="closing">
+          <div class="closing__contact h3">Let's work together, contact me at <a class="emphasize" href="mailto:alanipce@gmail.com">alanipce@gmail.com</a></div>
+          <div class="closing__social-links">
+              <div class="closing__social-hover-dim-effect">
+                <a href="https://www.linkedin.com/in/alanipce/" target="_black"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/alanipce" target="_black"><i class="fab fa-github"></i></a>
+                <a href="mailto:alanipce@gmail.com" target="_black"><i class="fab fa-stack-overflow"></i></a>
+                <a href="mailto:alanipce@gmail.com" target="_black"><i class="fab fa-hackerrank"></i></a>
+              </div>
           </div>
-      </div>
-      <div class="brand-footer__copyright">Built by Alan Copyright © 2019 Alan Perez</div>
+          <div class="closing__copyright">Built by Alan Copyright © 2019 Alan Perez</div>
+        </div>
     </div>
-  </footer>
+  </section>
 
   <script src="vendor/modernizr/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>

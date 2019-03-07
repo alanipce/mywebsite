@@ -263,13 +263,12 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  background: #F5F5F5;
-  color: #808080;
+  background: #E2E2E2;
+  color: #6b6b6b;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4 {
   color: #404040;
   margin: 0;
   padding: 0;
@@ -281,78 +280,122 @@ p {
 }
 
 a {
-  color: #404040;
+  color: #808080;
+  text-decoration: none;
+  font-size: 1rem;
+  position: relative;
+}
+
+a:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -6px;
+  height: 4px;
+  background: #5FD6B3;
 }
 
 .site-section {
   width: 100vw;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
-.site-section__title {
-  display: inline-block;
+.site-section--white {
+  background: #FFF;
+}
+
+.site-section--expanded {
   position: relative;
 }
 
-.site-section__title::after {
+.site-section--expanded::after {
+  background: inherit;
   content: "";
   position: absolute;
-  display: block;
+  top: 0;
   left: 0;
-  bottom: -12px;
-  height: 6px;
-  width: 64px;
-  background: #5FD6B3;
+  right: 0;
+  bottom: -180px;
+  z-index: -1;
+}
 
+.site-section--dark {
+  background: #232323;
+  color: #C2C2C2;
+}
+
+.site-section--dark h1, 
+.site-section--dark h2, 
+.site-section--dark h3, 
+.site-section--dark h4, 
+.site-section--dark h5, 
+.site-section--dark h6,
+.site-section--dark .h1, 
+.site-section--dark .h2, 
+.site-section--dark .h3, 
+.site-section--dark .h4 {
+  color: #FFF;
+}
+
+.site-section--dark a {
+  color: #FFF;
+}
+
+.site-section--collapse {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .content-area {
   display: block;
   box-sizing: content-box;
-  max-width: 1296px;
+  max-width: 1248px;
   margin: 0 auto;
-  padding: 80px;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
 /* Introduction section styles */
-.site-section--introduction {
-  position: relative;
-  background: #232323;
-  color: #C2C2C2;
-}
-
-.hero__thumbnail {
-  width: 125px;
-  height: 125px;
-  border-radius: 50%;
-  margin-bottom: 32px;
-}
-.hero__headline {
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  color: #FFFFFF;
-}
-.hero__description {
-  margin: 16px 0 0;
-  max-width: 750px;
-  text-align: center;
-  color: #C2C2C2;
-}
-
-.hero__content {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  /* Goes under the header with bottom padding of 30px, so visually it might appear there is more padding on the bottom. Need to compensate by adding on top or reducing on bottom. */
-  padding: 232px 0 202px;
-}
-
-.hero__actions {
+.header {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 0;
+}
+
+.header__name {
+  font-size: 1.5rem;
+}
+
+.header__title {
+  font-size: 1rem;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 45px;
+}
+
+.hero__headshot {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  margin-bottom: 36px;
+}
+
+.hero__description {
+  text-align: center;
+}
+
+.hero__actions {
   margin-top: 64px;
 }
 
@@ -366,7 +409,6 @@ a {
   border: none;
   color: #C2C2C2;
   background: transparent;
-  border-radius: 5px;
   margin-right: 8px;
 }
 
@@ -378,11 +420,13 @@ a {
   border: none;
   background: #5FD6B3;
   color: #232323;
+  transition: transform 300ms ease-out;
 }
 
 .hero__button--cta:hover {
   color: #232323;
   background: #2fb68e;
+  transform: scale(1.1);
 }
 
 
@@ -390,117 +434,23 @@ a {
   margin-right: 0;
 }
 
-.brand-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
-}
-
-.brand-header__content {
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.brand-header__content.content-area {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.brand-header__logo {
-  position: relative;
-  height: 12px;
-}
-
-.brand-header__links a {
-  font-size: 12px;
-  font-family: 'Montserrat', sans-serif;
-  color: #C2C2C2;
-  text-decoration: none;
-  padding: 8px 12px;
-}
-
-.brand-header__links a:hover {
-  color: #5FD6B3;
-}
-
-.brand-header__linkedin::before {
-  content: "Linkedin";
-}
-
-.brand-header__github::before {
-  content: "Github";
-}
-
-.brand-header__stackoverflow::before {
-  content: "StackOverflow";
-}
-
-.brand-header__hackerrank::before {
-  content: "Hackerrank";
-}
-
 /* Work Experience section styling */
-.site-section--work-experience {
-  background: #ebebeb;
-}
 .work {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 54px;
-}
-
-.work__item {
-  width: calc(50% - 16px);
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  margin-bottom: 48px;
-  background: #FFFFFF;
-}
-
-.work__info {
-  order: 2;
-  padding: 24px;
-}
-
-.work__company {
-  color: #808080;
-  font-size: 12px;
-  text-transform: uppercase;
-  margin-bottom: 4px;
-}
-
-.work__description {
-  margin: 0;
-  color: #404040;
-  font-weight: 400;
-  font-size: 1.2rem;
-}
-
-.work__illustration {
   display: block;
   width: 100%;
 
   position: relative;
   overflow: hidden;
 
-  /* 3/4 aspect ratio */
-  padding-bottom: 75%;
+  /* 16/9 aspect ratio */
+  padding-bottom: 56%;
   cursor: pointer;
   order: 1;
   background: #444;
   border: none;
 }
 
-.work__illustration::after {
+.work::after {
   display: block;
   position: absolute;
   top: 0;
@@ -511,86 +461,56 @@ a {
   transition: transform 300ms ease-out;
 }
 
-.work__illustration:hover::after {
+.work:hover::after {
   transform: scale(1.125);
   -webkit-transform: scale(1.125);
   -ms-transform: scale(1.125);
 }
 
-.work__illustration--caseaide::after {
-  background: url(/img/caseaide-banner.jpg);
+.work--caseaide::after {
+  background: url(/img/caseaide-banner.png);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.work__illustration--tumee::after {
+.work--tumee::after {
   background: url(/img/tumee-banner.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.work__illustration--csusb::after {
+.work--csusb::after {
   background: url(/img/csusb-banner.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-/* Outro section styles */
-.brand-footer {
-  background: #232323;
-  color: #FFF;
-}
-
-.brand-footer a {
-  color: #FFF;
-}
-
-.brand-footer__content {
-  position: relative;
-  z-index: 1; /* Create stacking context to position after element only behind the brand header content */ 
-}
-
-.brand-footer__content.content-area {
-  padding-bottom: 80px;
-  padding-top: 80px;
-}
-
-.brand-footer__content::after {
-  content: "";
-  background-image: url(/img/hero-illustration.svg);
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  background-size: contain;
-  opacity: 0.05;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  top: 0;
-  position: absolute;
-  z-index: -1;
-}
-
-.brand-footer__contact {
+/* Closing section styles */
+.closing__contact {
   text-align: center;
 }
 
-.brand-footer__social-links {
+.closing__contact a {
+  font-size: inherit;
+}
+
+.closing__social-links {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
-  padding: 48px 0;
+  padding: 64px 0;
 }
 
-.brand-footer__social-links a {
+.closing__social-links a {
   display: inline-block;
-  width: 45px;
-  height: 45px;
-  line-height: 45px;
-  font-size: 20px;
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  font-size: 24px;
   margin-right: 24px;
   color: #FFF;
   border: 1px solid #FFF;
@@ -598,23 +518,25 @@ a {
   text-align: center;
 }
 
-.brand-footer__social-hover-dim-effect:hover a {
+.closing__social-links a:hover::after {
+  content: none;
+}
+.closing__social-hover-dim-effect:hover a {
   color: #8c8c8c;
   border-color: #8c8c8c;
 }
 
-.brand-footer__social-links a:hover {
+.closing__social-links a:hover {
   border-color: #5FD6B3;
   background: #5FD6B3;
   color: #232323;
 }
 
-.brand-footer__social-links a:last-child {
+.closing__social-links a:last-child {
   margin-right: 0px;
 }
 
-.brand-footer__copyright {
-  font-size: 12px;
+.closing__copyright {
   text-align: center;
   margin-top: 64px;
 }
@@ -627,60 +549,38 @@ a {
 }
 @media screen and (max-width: 768px) { 
   .content-area {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .hero {
+    padding: 20px 0;
   }
 
-  /* Goes under the header so visually it might appear there is more padding on the bottom. Need to compensate by adding padding on top or reducing on bottom. */
-  .hero__content {
-    padding: 126px 40px 96px;
+  .site-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
-  .work__item {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    margin-bottom: 48px;
+  .site-section--collapse {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
-  .brand-header__linkedin::before {
-    font-family: 'Font Awesome 5 Brands';
-    font-size: 1.25rem;
-    content: "\f0e1";
+  .site-section--expanded::after {
+    bottom: -140px;
+  }
+
+  .closing__social-links a {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    font-size: 20px;
   }
   
-  .brand-header__github::before {
-    font-family: 'Font Awesome 5 Brands';
-    font-size: 1.25rem;
-    content: "\f09b";
-  }
-  
-  .brand-header__stackoverflow::before {
-    font-family: 'Font Awesome 5 Brands';
-    font-size: 1.25rem;
-    content: "\f16c";
-  }
-  
-  .brand-header__hackerrank::before {
-    font-family: 'Font Awesome 5 Brands';
-    font-size: 1.25rem;
-    content: "\f5f7";
-  }
 }
 
 @media screen and (max-width: 480px) { 
-  .hero__content {
-    align-items: flex-start;
-  }
 
-  .hero__headline {
-    text-align: start;
-  }
-
-  .hero__description {
-    text-align: start;
-  }
 }
 
 /* ==========================================================================
@@ -708,20 +608,18 @@ body, .content {
 
 .hero__description {
   font-size: 1.125rem;
-  line-height: 1.5;
+  line-height: 1.25;
 }
 
 @media (min-width: 43.75rem) {
   .hero__description {
     font-size: 1.375rem;
-    line-height: 1.7;
   }
 }
 
 @media (min-width: 56.25rem) {
   .hero__description {
     font-size: 1.5rem;
-    line-height: 1.7;
   }
 }
 
