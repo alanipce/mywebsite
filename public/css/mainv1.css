@@ -445,27 +445,96 @@ a:hover::after {
 
   position: relative;
   overflow: hidden;
+  text-align: start;
 
   /* 16/9 aspect ratio */
   padding-bottom: 56%;
   cursor: pointer;
-  order: 1;
   background: #444;
+  color: #FFF;
   border: none;
 }
 
-.work::after {
+.work--caseaide {
+  background: #508FDE;
+}
+
+.work--tumee {
+  background: #11103D;
+}
+
+.work--tumee .work__illustration {
+  margin-bottom: -48px;
+}
+
+.work--csusb {
+  background: #0065BD;
+}
+
+.work__container {
   display: block;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  content: "";
+  padding: 48px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.work__info {
+  flex-grow: 1;  
+}
+
+.work__role {
+  font-weight: bold;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.work__role::after {
+  content: " AT";
+}
+
+.work__partner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+.work__client {
+  font-size: 2rem;
+  margin-right: 10px;
+}
+
+.work__timeline {
+  color: #ECECEC;
+}
+
+.work__description {
+  color: #ECECEC;
+  margin-top: 64px;
+}
+
+.work__illustration {
+  width: 50%;
+  align-self: flex-end;
+}
+
+.work__scale-wrapper {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   transition: transform 300ms ease-out;
 }
 
-.work:hover::after {
+.work__scale-wrapper:hover {
   transform: scale(1.125);
   -webkit-transform: scale(1.125);
   -ms-transform: scale(1.125);
@@ -490,7 +559,7 @@ a:hover::after {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-}
+} */
 
 /* Closing section styles */
 .closing__contact {
@@ -548,8 +617,14 @@ a:hover::after {
 /* ==========================================================================
    Custom Responsive styles
    ========================================================================== */
-@media screen and (max-width: 991px) { 
-
+@media screen and (max-width: 991px) {
+  .work__client {
+    font-size: 1.75rem;
+  }
+  
+  .work__illustration {
+    display: none;
+  }
 }
 @media screen and (max-width: 768px) { 
   .content-area {
@@ -577,6 +652,10 @@ a:hover::after {
 
   .site-section--expanded::after {
     bottom: -140px;
+  }
+
+  .work {
+    padding-bottom: 75%;
   }
 
   .closing__social-links a {
