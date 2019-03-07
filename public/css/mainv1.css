@@ -395,7 +395,6 @@ a:hover::after {
 
 .hero__description {
   font-family: 'Montserrat';
-  max-width: 800px;
   text-align: center;
 }
 
