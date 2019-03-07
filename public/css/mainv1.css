@@ -464,7 +464,7 @@ a:hover::after {
 }
 
 .work--tumee .work__illustration {
-  margin-bottom: -48px;
+  margin-bottom: -80px;
 }
 
 .work--csusb {
@@ -478,7 +478,7 @@ a:hover::after {
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 48px;
+  padding: 80px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -621,9 +621,17 @@ a:hover::after {
   .work__client {
     font-size: 1.75rem;
   }
-  
+
   .work__illustration {
     display: none;
+  }
+
+  .work--tumee .work__illustration {
+    margin-bottom: -32px;
+  }
+
+  .work__container {
+    padding: 32px;
   }
 }
 @media screen and (max-width: 768px) { 
