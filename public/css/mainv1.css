@@ -402,7 +402,7 @@ a:hover::after {
   padding: 24px;
 }
 
-.hero__description {
+.hero__message {
   text-align: center;
   color: #404040;
 }
@@ -686,7 +686,7 @@ a:hover::after {
 }
 
 @media screen and (max-width: 480px) { 
-  .hero__description {
+  .hero__message {
     text-align: start;
   }
 }
@@ -714,19 +714,19 @@ body, .content {
   }
 }
 
-.hero__description {
+.hero__message {
   font-size: 1.2rem;
   line-height: 1.5;
 }
 
 @media (min-width: 43.75rem) {
-  .hero__description {
+  .hero__message {
     font-size: 1.375rem;
   }
 }
 
 @media (min-width: 56.25rem) {
-  .hero__description {
+  .hero__message {
     font-size: 1.6rem;
   }
 }
