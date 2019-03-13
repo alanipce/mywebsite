@@ -303,7 +303,7 @@ a:hover::after {
 }
 
 .site-section__title {
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
 }
 
@@ -539,6 +539,31 @@ a:hover::after {
   transform: scale(1.125);
   -webkit-transform: scale(1.125);
   -ms-transform: scale(1.125);
+}
+
+.work-overview {
+  margin-top: 80px;
+}
+.work-overview__actions {
+  display: flex;
+  flex-direction: row;
+  margin-top: 64px;
+}
+
+.work-overview__link {
+  color: #404040;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+/* Responsibility section styles */
+.responsibility__overview {
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
+.responsibility__specifics {
+  margin-top: 32px;
 }
 
 /* Closing section styles */
