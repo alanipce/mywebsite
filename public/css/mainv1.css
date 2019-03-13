@@ -399,7 +399,7 @@ a:hover::after {
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
-  padding: 24px;
+  padding: 30px 0;
 }
 
 .hero__message {
@@ -488,7 +488,6 @@ a:hover::after {
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 80px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -496,7 +495,8 @@ a:hover::after {
 }
 
 .work__info {
-  flex-grow: 1;  
+  flex-grow: 1;
+  margin: 80px;
 }
 
 .work__role {
@@ -530,7 +530,7 @@ a:hover::after {
 }
 
 .work__illustration {
-  width: 50%;
+  height: 100%;
   align-self: flex-end;
 }
 
@@ -569,7 +569,7 @@ a:hover::after {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-} */
+}
 
 /* Closing section styles */
 .closing__contact {
@@ -640,8 +640,8 @@ a:hover::after {
     margin-bottom: -32px;
   }
 
-  .work__container {
-    padding: 32px;
+  .work__info {
+    margin: 32px;
   }
 }
 @media screen and (max-width: 768px) { 
