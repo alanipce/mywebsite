@@ -296,6 +296,16 @@ a:hover::after {
   background: #5FD6B3;
 }
 
+/* 
+  Collapses the padding between neighboring site sections.
+  Useful for layouts with site sections all containing common background color.
+  Which lack a visual guide of where one section starts and the other ends. Often
+  leads to visually appearing too spaced out.
+*/
+.site-section-collapse-wrapper .site-section:not(:last-child) {
+  padding-bottom: 0;
+}
+
 .site-section {
   width: 100vw;
   padding-top: 100px;
@@ -542,12 +552,12 @@ a:hover::after {
 }
 
 .work-overview {
-  margin-top: 80px;
+  margin-top: 30px;
 }
 .work-overview__actions {
   display: flex;
   flex-direction: row;
-  margin-top: 64px;
+  margin-top: 48px;
 }
 
 .work-overview__link {
@@ -564,6 +574,44 @@ a:hover::after {
 
 .responsibility__specifics {
   margin-top: 32px;
+}
+
+/* Projects section styles */
+.project__name {
+  margin-top: 16px;
+  font-size: 1.5rem;
+}
+
+.project__description {
+  margin-top: 32px;
+}
+
+.project__showcase {
+  
+}
+
+.project__publication-links {
+  display: flex;
+  flex-direction: row;
+}
+
+.project__link {
+  display: block;
+  box-sizing: border-box;
+}
+
+.project__link:hover::after {
+  content: none;
+}
+
+.project__app-store-badge, .project__google-play-badge {
+  box-sizing: border-box;
+  height: 55px;
+  width: auto;
+}
+/* Visually match padding in google play store img */
+.project__app-store-badge {
+  padding: 6%;
 }
 
 /* Closing section styles */
