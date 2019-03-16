@@ -185,6 +185,10 @@ textarea {
   font-weight: bold;
 }
 
+.image-fill {
+  width: 100%;
+}
+
 /*
 * Hide only visually, but have it available for screen readers:
 * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
@@ -263,7 +267,7 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  background: #E2E2E2;
+  background: #ECECEC;
   color: #6b6b6b;
 }
 
@@ -294,6 +298,19 @@ a:hover::after {
   bottom: -6px;
   height: 4px;
   background: #5FD6B3;
+}
+
+.feature-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.feature-list__item {
+  width: calc(50% - 40px);
+  margin: 20px 0;
 }
 
 /* 
@@ -553,6 +570,7 @@ a:hover::after {
 
 .work-overview {
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 .work-overview__actions {
   display: flex;
@@ -587,12 +605,30 @@ a:hover::after {
 }
 
 .project__showcase {
-  
+
+}
+
+.youtube-responsive-container {
+  position:relative;
+  padding-bottom:56.25%;
+  padding-top:30px;
+  height:0;
+  overflow:hidden;
+}
+
+.youtube-responsive-container iframe, .youtube-responsive-container object, .youtube-responsive-container embed {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
 }
 
 .project__publication-links {
   display: flex;
   flex-direction: row;
+  margin-top: 64px;
+  margin-bottom: 64px;
 }
 
 .project__link {
@@ -721,6 +757,9 @@ a:hover::after {
     font-size: 20px;
   }
   
+  .feature-list__item {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 480px) { 
