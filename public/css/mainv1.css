@@ -377,40 +377,30 @@ a:hover::after {
   padding-right: 80px;
 }
 
-.headshot {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-}
-
 /* Introduction section styles */
 .header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
   padding: 32px 0;
 }
 
-.header__me {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.header__about {
-  margin-left: 24px;
+.header__img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin-right: 16px;
 }
 
 .header__name {
   font-weight: bold;
-  font-size: 1.6rem;
-  padding: 2px 0;
+  font-size: 1.2rem;
+  text-transform: uppercase;
 }
 
 .header__title {
-  font-size: 1.1rem;
+  font-size: 0.85rem;
 }
 
 .hero {
@@ -420,16 +410,16 @@ a:hover::after {
   flex-wrap: nowrap;
   align-items: center;
   padding: 30px 0;
+  text-align: center;
 }
 
 .hero__message {
-  text-align: center;
-  color: #404040;
+  margin: 32px 0;
 }
 
 .hero__actions {
   display: flex;
-  margin-top: 64px;
+  margin: 32px 0;
 }
 
 .hero__button {
@@ -522,7 +512,7 @@ a:hover::after {
 
 .work__role {
   font-weight: bold;
-  font-size: 0.75rem;
+  font-size: 1rem;
   text-transform: uppercase;
 }
 
@@ -538,8 +528,12 @@ a:hover::after {
 }
 .work__client {
   color: #404040;
-  font-size: 2rem;
+  font-size: 3rem;
   margin-right: 10px;
+}
+
+.work__timeline {
+  font-size: 1.5rem;
 }
 
 .work__description {
@@ -763,7 +757,7 @@ a:hover::after {
 }
 
 @media screen and (max-width: 480px) { 
-  .hero__message {
+  .hero {
     text-align: start;
   }
 }
