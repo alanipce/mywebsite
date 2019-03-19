@@ -329,11 +329,6 @@ a:hover::after {
   padding-bottom: 100px;
 }
 
-.site-section__title {
-  font-size: 1.2rem;
-  text-transform: uppercase;
-}
-
 .site-section--white {
   background: #FFF;
 }
@@ -562,17 +557,33 @@ a:hover::after {
   -ms-transform: scale(1.125);
 }
 
-.work-overview {
+.client-overview {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-.work-overview__actions {
+
+.client__name {
+  color: #404040;
+  font-size: 3rem;
+  margin-right: 10px;
+}
+.client__headline {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.client__description {
+  font-size: 1.2rem;
+}
+
+.client__links {
   display: flex;
   flex-direction: row;
   margin-top: 48px;
 }
 
-.work-overview__link {
+.client__link {
   color: #404040;
   text-transform: uppercase;
   font-size: 0.75rem;
@@ -771,55 +782,64 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2
 
 body, .content {
   font-size: 1rem;
-  /* equivalent to 16px */
-  line-height: 1.25;
-  /* equivalent to 20px */
+  line-height: 1.5;
 }
 
-@media (min-width: 43.75rem) {
-  body, .content {
-    font-size: 1rem;
-    /* equivalent to 16px */
-    line-height: 1.375;
-    /* equivalent to 22px */
-  }
+.body1 {
+  color: #404040;
+  font-weight: normal;
 }
 
-.hero__message {
+.body2 {
+  color: #6b6b6b;
+}
+
+.headline__annotation {
+  font-size: 1.2rem;
+  color: #6b6b6b;
+  font-weight: 300;
+}
+
+
+.hero__message, .subhead {
   font-size: 1.2rem;
   line-height: 1.7;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 @media (min-width: 43.75rem) {
-  .hero__message {
-    font-size: 1.375rem;
+  .hero__message, .subhead, .headline__annotation {
+    font-size: 1.25rem;
   }
 }
 
 @media (min-width: 56.25rem) {
-  .hero__message {
-    font-size: 1.4rem;
+  .hero__message, .subhead, .headline__annotation {
+    font-size: 1.3rem;
   }
 }
 
-h1, .h1, .hero__headline {
+h1, .h1, .hero__headline, .headline {
   font-size: 2rem;
   /* 2x body copy size = 32px */
   line-height: 1.25;
   /* 45px / 36px */
+  font-weight: bold;
+  color: #404040;
 }
 
 @media (min-width: 43.75rem) {
-  h1, .h1, .hero__headline {
-    font-size: 2.5rem;
+  h1, .h1, .hero__headline, .headline {
+    font-size: 2.2rem;
     /* 2.5x body copy size = 40px */
     line-height: 1.125;
   }
 }
 
 @media (min-width: 56.25rem) {
-  h1, .h1, .hero__headline {
-    font-size: 3rem;
+  h1, .h1, .hero__headline, .headline {
+    font-size: 2.5rem;
     /* 3x body copy size = 48px */
     line-height: 1.05;
     /* keep to a multiple of the 20px line height and something more appropriate for display headings */
@@ -872,7 +892,12 @@ h3, .h3 {
   }
 }
 
-h4, .h4 {
+.title {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h4, .h4, .title {
   font-size: 1.125rem;
   /* 1.125x body copy size = 18px */
   line-height: 1.11111111;
