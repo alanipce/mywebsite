@@ -266,9 +266,9 @@ html {
 
 body {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
+  font-weight: normal;
   background: #ECECEC;
-  color: #6b6b6b;
+  color: #5a5a5a;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -284,7 +284,7 @@ p {
 }
 
 a {
-  color: #808080;
+  color: #5a5a5a;
   text-decoration: none;
   font-size: 1rem;
   position: relative;
@@ -427,7 +427,7 @@ a:hover::after {
   border: none;
   background: transparent;
   margin-right: 8px;
-  color: #6b6b6b;
+  color: #5a5a5a;
 }
 
 .hero__button:hover {
@@ -558,8 +558,7 @@ a:hover::after {
 }
 
 .client-overview {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding: 64px 0;
 }
 
 .client__name {
@@ -600,17 +599,25 @@ a:hover::after {
 }
 
 /* Projects section styles */
+.project {
+  padding: 32px 0;
+}
 .project__name {
   margin-top: 16px;
   font-size: 1.5rem;
+  font-weight: bold;
+  color: #404040;
 }
 
 .project__description {
-  margin-top: 32px;
+  margin-top: 16px;
 }
 
+.project__highlights {
+  padding: 32px 0;
+}
 .project__showcase {
-
+  padding: 32px 0;
 }
 
 .youtube-responsive-container {
@@ -632,8 +639,7 @@ a:hover::after {
 .project__publication-links {
   display: flex;
   flex-direction: row;
-  margin-top: 64px;
-  margin-bottom: 64px;
+  margin-top: 32px;
 }
 
 .project__link {
@@ -647,7 +653,7 @@ a:hover::after {
 
 .project__app-store-badge, .project__google-play-badge {
   box-sizing: border-box;
-  height: 55px;
+  height: 60px;
   width: auto;
 }
 /* Visually match padding in google play store img */
@@ -657,6 +663,7 @@ a:hover::after {
 
 /* Closing section styles */
 .closing__contact {
+  font-weight: 300;
   text-align: center;
 }
 
@@ -787,16 +794,16 @@ body, .content {
 
 .body1 {
   color: #404040;
-  font-weight: normal;
 }
 
 .body2 {
-  color: #6b6b6b;
+  color: #5a5a5a;
+  font-weight: 300;
 }
 
 .headline__annotation {
-  font-size: 1.2rem;
-  color: #6b6b6b;
+  font-size: 0.5em;
+  color: #5a5a5a;
   font-weight: 300;
 }
 
@@ -806,6 +813,7 @@ body, .content {
   line-height: 1.7;
   margin-top: 16px;
   margin-bottom: 16px;
+  font-weight: 300;
 }
 
 @media (min-width: 43.75rem) {
@@ -893,18 +901,18 @@ h3, .h3 {
 }
 
 .title {
-  font-weight: bold;
+  font-weight: normal;
   text-transform: uppercase;
 }
 
 h4, .h4, .title {
-  font-size: 1.125rem;
+  font-size: 1.275rem;
   /* 1.125x body copy size = 18px */
   line-height: 1.11111111;
 }
 
 @media (min-width: 43.75rem) {
-  h4, .h4 {
+  h4, .h4, .title {
     line-height: 1.22222222;
     /* (22px / 18px */
   }
