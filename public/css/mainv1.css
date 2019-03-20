@@ -275,6 +275,7 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4 {
   color: #404040;
   margin: 0;
+  margin-bottom: 8px;
   padding: 0;
 }
 
@@ -299,6 +300,17 @@ a:hover::after {
   height: 4px;
   background: #5FD6B3;
 }
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list__item {
+  padding: 24px 0;
+}
+
 
 .feature-list {
   display: flex;
