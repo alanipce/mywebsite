@@ -1,5 +1,4 @@
 ---
-layout: default
 ---
 <!-- Introduction section -->
 <section class="site-section site-section--white site-section--with-header">
@@ -19,51 +18,23 @@ layout: default
 <!-- Work experience section -->
 <section class="site-section site-section--overlap">
   <div class="content-area">
-    <a href="/caseaide" class="work-container work-container--caseaide" aria-label="Click to view">
+    {% for work in site.work %}
+    <a href="{{work.url}}" class="work-container work-container--{{work.name | slugify}}" aria-label="Click to view">
       <div class="work-container__scale-wrapper">
         <div class="work">
           <div class="work__info">
-            <div class="work__role">Developer</div>
+            <div class="work__role">{{work.position}}</div>
             <div class="work__partner">
-              <div class="work__client">CaseAide</div>
-              <div class="work__timeline">Sept 2015 - Present</div>
+              <div class="work__client">{{work.name}}</div>
+              <div class="work__timeline">{{work.timeline}}</div>
             </div>
-            <div class="work__description">Assisting Social Service Professionals with Case Management tools.</div>
+            <div class="work__description">{{work.description}}</div>
           </div>
-          <img class="work__illustration" src="/assets/img/caseaide-illustration.svg">
+          <img class="work__illustration" src="{{work.banner}}">
         </div>
       </div>
     </a>
-    <a href="#" class="work-container work-container--tumee" aria-label="Click to view">
-      <div class="work-container__scale-wrapper">
-        <div class="work">
-          <div class="work__info">
-            <div class="work__role">Developer</div>
-            <div class="work__partner">
-              <div class="work__client">TuMee</div>
-              <div class="work__timeline">Oct 2015 - Nov 2017</div>
-            </div>
-            <div class="work__description">On-demand crowd sourced delivery logistics platform</div>
-          </div>
-          <img class="work__illustration" src="/assets/img/tumee-illustration.svg">
-        </div>
-      </div>
-    </a>
-    <a href="#" class="work-container work-container--csusb" aria-label="Click to view">
-      <div class="work-container__scale-wrapper">
-        <div class="work">
-          <div class="work__info">
-            <div class="work__role">Intern</div>
-            <div class="work__partner">
-              <div class="work__client">CSUSB Mobile Apps</div>
-              <div class="work__timeline">Sept 2015 - Present</div>
-            </div>
-            <div class="work__description">Mobile apps developed by students for students.</div>
-          </div>
-          <img class="work__illustration" src="/assets/img/csusb-illustration.svg">
-        </div>
-      </div>
-    </a>
+    {% endfor %}
   </div>
 </section>
 

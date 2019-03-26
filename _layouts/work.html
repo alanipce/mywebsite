@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<div class="site-section-contrast-wrapper">
+  <!-- Overview section -->
+  <section class="site-section site-section--with-header">
+    <div class="content-area">
+      {% include header.html %}
+      <div class="client-overview">
+          <div class="client__info">
+              <div class="headline">{{page.position}} at {{page.name}} <span class="headline__annotation">{{page.timeline}}</span></div>
+              <div class="subhead">{{page.description}}</div>
+          </div>
+        <div class="client__links">
+            {% for link in page.links  %}
+                <a href="{{link.url}}" target="_blank" class="client__link">{{link.name}}</a>
+            {% endfor %}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Responsibilities section -->
+  <section class="site-section">
+    <div class="content-area">
+      <h2 class="title">Responsibilities</h2>
+      <div class="responsibility">
+          <ul class="responsibility__specifics list">
+            {% for responsibility in page.responsibilities  %}
+                <li class="list__item">
+                    <div class="h3">{{responsibility.title}}</div>
+                    <div class="body2">{{responsibility.summary}}</div>
+                </li>
+            {% endfor %}
+          </ul>
+      </div>
+    </div>
+  </section>
+
+  {{content}}
+</div>

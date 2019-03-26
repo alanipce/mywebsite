@@ -494,7 +494,7 @@ a:hover::after {
   background: #11103D;
 }
 
-.work-container--csusb {
+.work-container--csusb-mobile-apps {
   background: #0065BD;
 }
 
@@ -604,6 +604,11 @@ a:hover::after {
   font-size: 0.75rem;
   font-weight: bold;
 }
+
+.client__link:not(:last-of-type) {
+  margin-right: 32px;
+}
+
 /* Responsibility section styles */
 .responsibility__overview {
   margin-top: 16px;

@@ -1,0 +1,15 @@
+collections:
+  work:
+    output: true
+    permalink: /work/:slug
+
+defaults:
+  - scope:
+      path: ""
+      type: "work"
+    values:
+      layout: "work"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
