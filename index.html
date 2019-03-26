@@ -45,10 +45,9 @@
         <div class="closing__contact h3">Let's work together, contact me at <a class="emphasize" href="mailto:alanipce@gmail.com">alanipce@gmail.com</a></div>
         <div class="closing__social-links">
             <div class="closing__social-hover-dim-effect">
-              <a href="https://www.linkedin.com/in/alanipce/" target="_black"><i class="fab fa-linkedin"></i></a>
-              <a href="https://github.com/alanipce" target="_black"><i class="fab fa-github"></i></a>
-              <a href="mailto:alanipce@gmail.com" target="_black"><i class="fab fa-stack-overflow"></i></a>
-              <a href="mailto:alanipce@gmail.com" target="_black"><i class="fab fa-hackerrank"></i></a>
+              {% for social in site.data.social %}
+                <a href="{{social.url}}" target="_black" aria-label="{{social.name}} social link"><i class="fab {{social.icon}}"></i></a>
+              {% endfor %}
             </div>
         </div>
         <div class="closing__copyright">Built by Alan Copyright © 2019 Alan Perez</div>
