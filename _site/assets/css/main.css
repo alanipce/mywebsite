@@ -712,8 +712,10 @@ blockquote {
 .site-section--white {
   background: #FFF; }
 
+.site-section--black {
+  background: #232323; }
+
 .site-section--dark {
-  background: #232323;
   color: #C2C2C2; }
 
 .site-section--dark h1,
