@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: center;   
     padding: 32px 0;
   }
   
@@ -16,7 +16,7 @@
   .header__name {
     font-weight: bold;
     font-size: 1.2rem;
-    text-transform: uppercase;
+    text-transform: capitalize;
   }
   
   .header__title {
@@ -51,7 +51,7 @@
   .site-section--black {
     background: #232323;
   }
-  
+
   .site-section--dark {
     color: #C2C2C2;
   }
