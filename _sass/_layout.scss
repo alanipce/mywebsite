@@ -1,0 +1,108 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 32px 0;
+  }
+  
+  .header__img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    margin-right: 16px;
+  }
+  
+  .header__name {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+  
+  .header__title {
+    font-size: 0.85rem;
+  }
+  
+
+/* 
+  Collapses the padding between neighboring site sections.
+  Useful for layouts with site sections all containing common background color.
+  Which lack a visual guide of where one section starts and the other ends. Often
+  leads to visually appearing too spaced out.
+*/
+.site-section-collapse-wrapper .site-section:not(:last-child) {
+    padding-bottom: 0;
+  }
+  
+  .site-section-contrast-wrapper .site-section:nth-child(even) {
+    background: #e0e0e0;
+  }
+  
+  .site-section {
+    width: 100vw;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  
+  .site-section--white {
+    background: #FFF;
+  }
+  
+  .site-section--dark {
+    background: #232323;
+    color: #C2C2C2;
+  }
+  
+  .site-section--dark h1, 
+  .site-section--dark h2, 
+  .site-section--dark h3, 
+  .site-section--dark h4, 
+  .site-section--dark h5, 
+  .site-section--dark h6,
+  .site-section--dark .h1, 
+  .site-section--dark .h2, 
+  .site-section--dark .h3, 
+  .site-section--dark .h4 {
+    color: #FFF;
+  }
+  
+  .site-section--dark a {
+    color: #FFF;
+  }
+  
+  .site-section--with-header {
+    padding-top: 0;
+  }
+  
+  .site-section--overlap .content-area {
+    margin-top: -150px;
+  }
+  
+  .content-area {
+    display: block;
+    box-sizing: content-box;
+    max-width: 1248px;
+    margin: 0 auto;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  @include tablet {
+    .content-area {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .site-section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .site-section--with-header {
+        padding-top: 0;
+    }
+
+    .site-section--overlap .content-area {
+        margin-top: -90px;
+    }
+  }

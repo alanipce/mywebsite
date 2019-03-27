@@ -1,0 +1,30 @@
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .list__item {
+    padding: 24px 0;
+  }
+  
+  
+  .feature-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  
+  .feature-list__item {
+    width: calc(50% - 40px);
+    margin: 20px 0;
+  }
+
+
+  @include tablet {
+    .feature-list__item {
+      width: 100%;
+    }
+  }

@@ -1,0 +1,351 @@
+---
+---
+@import "core";
+@import "lists";
+
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 30px 0;
+    text-align: center;
+  }
+  
+  .hero__title {
+      @extend .headline;
+  }
+  .hero__message {
+    @extend .subhead;
+    margin: 32px 0;
+  }
+  
+  .hero__actions {
+    display: flex;
+    margin: 32px 0;
+  }
+  
+  .hero__button {
+    display: block;
+    cursor: pointer;
+    padding: 16px 20px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    background: transparent;
+    margin-right: 8px;
+    color: #5a5a5a;
+  }
+  
+  .hero__button:hover {
+    color: #5FD6B3;
+  }
+  
+  .hero__button--cta {
+    padding: 16px 40px;
+    border: none;
+    background: #5FD6B3;
+    color: #232323;
+    transition: transform 300ms ease-out;
+  }
+  
+  .hero__button--cta:hover {
+    color: #232323;
+    background: #2fb68e;
+    transform: scale(1.1);
+  }
+  
+  
+  .hero__button:last-child {
+    margin-right: 0;
+  }
+  
+  /* Work Experience section styling */
+  .work-container {
+    display: block;
+    width: 100%;
+  
+    position: relative;
+    overflow: hidden;
+    text-align: start;
+  
+    /* 16/9 aspect ratio */
+    padding-bottom: 56%;
+    cursor: pointer;
+    background: #444;
+    color: #ECECEC;
+    border: none;
+  }
+  
+  .work-container--caseaide {
+    background: #508FDE;
+  }
+  
+  .work-container--tumee {
+    background: #11103D;
+  }
+  
+  .work-container--csusb-mobile-apps {
+    background: #0065BD;
+  }
+  
+  .work-container .work__client {
+    color: #FFF;
+  }
+  
+  .work-container .work__role {
+    color: #FFF;
+  }
+  
+  .work-container .work {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 80px;
+  }
+  
+  .work {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  
+  .work__role {
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+  
+  .work__role::after {
+    content: " AT";
+  }
+  
+  .work__partner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+  .work__client {
+    color: #404040;
+    font-size: 3rem;
+    margin-right: 10px;
+  }
+  
+  .work__timeline {
+    font-size: 1.5rem;
+  }
+  
+  .work__description {
+    margin-top: 32px;
+  }
+  
+  .work-container .work__illustration {
+    width: 100%;
+    align-self: center;
+    margin-bottom: -128px;
+  }
+  
+  .work-container__scale-wrapper {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: transform 300ms ease-out;
+  }
+  
+  .work-container__scale-wrapper:hover {
+    transform: scale(1.125);
+    -webkit-transform: scale(1.125);
+    -ms-transform: scale(1.125);
+  }
+  
+  .client-overview {
+    padding: 64px 0;
+  }
+  
+  .client__name {
+    color: #404040;
+    font-size: 3rem;
+    margin-right: 10px;
+  }
+  .client__headline {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+  
+  .client__description {
+    font-size: 1.2rem;
+  }
+  
+  .client__links {
+    display: flex;
+    flex-direction: row;
+    margin-top: 48px;
+  }
+  
+  .client__link {
+    color: #404040;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: bold;
+  }
+  
+  .client__link:not(:last-of-type) {
+    margin-right: 32px;
+  }
+  
+  /* Responsibility section styles */
+  .responsibility__overview {
+    margin-top: 16px;
+    margin-bottom: 32px;
+  }
+  
+  .responsibility__specifics {
+    margin-top: 32px;
+  }
+  
+  /* Projects section styles */
+  .project {
+    padding: 32px 0;
+  }
+  .project__name {
+    margin-top: 16px;
+  }
+  
+  .project__description {
+    margin-top: 16px;
+  }
+  
+  .project__highlights {
+    padding: 32px 0;
+  }
+  .project__showcase {
+    padding: 32px 0;
+  }
+
+  .project__publication-links {
+    display: flex;
+    flex-direction: row;
+    margin-top: 32px;
+  }
+  
+  .project__link {
+    display: block;
+    box-sizing: border-box;
+  }
+  
+  .project__link:hover::after {
+    content: none;
+  }
+  
+  .project__app-store-badge, .project__google-play-badge {
+    box-sizing: border-box;
+    height: 60px;
+    width: auto;
+  }
+  /* Visually match padding in google play store img */
+  .project__app-store-badge {
+    padding: 6%;
+  }
+  
+  /* Closing section styles */
+  .closing__contact {
+    font-weight: 300;
+    text-align: center;
+  }
+  
+  .closing__contact a {
+    font-size: inherit;
+  }
+  
+  .closing__social-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 64px 0;
+  }
+  
+  .closing__social-links a {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    font-size: 24px;
+    margin-right: 24px;
+    color: #FFF;
+    border: 1px solid #FFF;
+    border-radius: 50%;
+    text-align: center;
+  }
+  
+  .closing__social-links a:hover::after {
+    content: none;
+  }
+  .closing__social-hover-dim-effect:hover a {
+    color: #8c8c8c;
+    border-color: #8c8c8c;
+  }
+  
+  .closing__social-links a:hover {
+    border-color: #5FD6B3;
+    background: #5FD6B3;
+    color: #232323;
+  }
+  
+  .closing__social-links a:last-child {
+    margin-right: 0px;
+  }
+  
+  .closing__copyright {
+    text-align: center;
+    margin-top: 64px;
+  }
+
+  @include tablet {
+    .work__client {
+        font-size: 1.75rem;
+      }
+    
+      .work-container .work__illustration {
+        display: none;
+      }
+    
+      .work-container .work {
+        padding: 32px;
+      }
+
+      .hero {
+        padding: 20px 0;
+      }
+    
+      .hero__headshot {
+        width: 132px;
+        height: 132px;
+      }
+
+      .work-container {
+        padding-bottom: 75%;
+      }
+    
+      .closing__social-links a {
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+        font-size: 20px;
+      }
+  }
+
+  @include phone {
+    .hero {
+        text-align: start;
+      }
+  }

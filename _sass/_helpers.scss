@@ -1,0 +1,48 @@
+.emphasize {
+    font-weight: bold;
+}
+
+.image-fill {
+    width: 100%;
+}
+
+.youtube-responsive-container {
+    position:relative;
+    padding-bottom:56.25%;
+    padding-top:30px;
+    height:0;
+    overflow:hidden;
+}
+
+.youtube-responsive-container iframe, .youtube-responsive-container object, .youtube-responsive-container embed {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+
+// Responsive mixin helpers
+@mixin tablet {
+    @media screen and (max-width: #{$tablet-width}) {
+        @content;
+    }
+}
+
+@mixin phone {
+    @media screen and (max-width: #{$phone-width}){
+        @content;
+    }
+}
+
+@mixin typography-break-1 {
+    @media (min-width: #{$typography-breakpoint-1}) {
+        @content;
+    }
+}
+
+@mixin typography-break-2 {
+    @media (min-width: #{$typography-breakpoint-2}) {
+        @content;
+    }
+}
