@@ -1,9 +1,12 @@
+$section-padding-mobile: $section-padding * 0.6;
+$content-padding-mobile: $content-padding / 4;
+
 .header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;   
-    padding: 32px 0;
+    padding: $header-padding 0;
   }
   
   .header__img {
@@ -40,8 +43,8 @@
   
   .site-section {
     width: 100vw;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: $section-padding;
+    padding-bottom: $section-padding;
   }
   
   .site-section--white {
@@ -73,39 +76,42 @@
     color: #FFF;
   }
   
+  // visually balance whitespace with header
   .site-section--with-header {
     padding-top: 0;
+    padding-bottom: $header-padding * 2;
   }
   
   .site-section--overlap .content-area {
-    margin-top: -150px;
+    margin-top: $section-padding * -1.5;
   }
   
   .content-area {
     display: block;
     box-sizing: content-box;
-    max-width: 1248px;
+    max-width: $content-max-width;
     margin: 0 auto;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: $content-padding;
+    padding-right: $content-padding;
   }
 
   @include tablet {
     .content-area {
-        padding-left: 24px;
-        padding-right: 24px;
+        padding-left: $content-padding-mobile;
+        padding-right: $content-padding-mobile;
     }
 
     .site-section {
-        padding-top: 60px;
-        padding-bottom: 60px;
+        padding-top: $section-padding-mobile;
+        padding-bottom: $section-padding-mobile;
     }
 
     .site-section--with-header {
         padding-top: 0;
+        padding-bottom: $header-padding * 2;
     }
 
     .site-section--overlap .content-area {
-        margin-top: -90px;
+      margin-top: $section-padding-mobile * -1.5;
     }
   }
