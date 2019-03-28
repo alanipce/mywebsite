@@ -498,14 +498,15 @@ textarea {
 * 2. The use of `table` rather than `block` is only necessary if using
 *    `:before` to contain the top-margins of child elements.
 */
-.clearfix:before,
-.clearfix:after {
+.clearfix:before, .work-navigation:before,
+.clearfix:after,
+.work-navigation:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */ }
 
-.clearfix:after {
+.clearfix:after, .work-navigation:after {
   clear: both; }
 
 .emphasize {
@@ -991,6 +992,12 @@ blockquote {
 /* Visually match padding in google play store img */
 .project__app-store-badge {
   padding: 6%; }
+
+.work-navigation__previous {
+  float: left; }
+
+.work-navigation__next {
+  float: right; }
 
 /* Closing section styles */
 .closing__contact {

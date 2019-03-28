@@ -41,4 +41,40 @@ layout: default
   </section>
 
   {{content}}
+
+  {% assign sorted_work = site.work | sort: 'order' %}
+
+  {% for work in sorted_work %}
+    {% if work.order == page.order %}
+      {% unless forloop.first %}
+        {% assign prev_work = temp_prev %}
+      {% endunless %}
+      {% unless forloop.last %}
+        {% assign next_work = sorted_work[forloop.index] %}
+      {% endunless %}
+    {% endif %}
+
+    {% assign temp_prev = work %}
+  {% endfor %}
+
+  {% if prev_work or next_work %}
+    <div class="site-section">
+      <div class="content-area">
+        <div class="work-navigation">
+          {% if prev_work %}
+            <a href="{{prev_work.url}}" class="work-navigation__previous">
+                {{prev_work.name}}
+            </a>
+          {% endif %}
+
+          {% if next_work %}
+            <a href="{{next_work.url}}" class="work-navigation__next">
+              {{next_work.name}}
+            </a>
+          {% endif %}
+        </div>
+        
+      </div>
+    </div>
+    {% endif %}
 </div>

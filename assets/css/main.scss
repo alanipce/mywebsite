@@ -255,6 +255,18 @@
   .project__app-store-badge {
     padding: 6%;
   }
+
+  .work-navigation {
+    @extend .clearfix;
+  }
+
+  .work-navigation__previous {
+    float: left;
+  }
+
+  .work-navigation__next {
+    float: right;
+  }
   
   /* Closing section styles */
   .closing__contact {
