@@ -12,11 +12,13 @@ layout: default
               <div class="headline">{{page.role}} at {{page.name}} <span class="headline__annotation">{{page.timeline}}</span></div>
               <div class="subhead">{{page.description}}</div>
           </div>
-        <div class="client__links">
-            {% for link in page.links  %}
-                <a href="{{link.url}}" target="_blank" class="client__link">{{link.name}}</a>
-            {% endfor %}
-        </div>
+        {% if page.links %}
+          <div class="client__links">
+              {% for link in page.links  %}
+                  <a href="{{link.url}}" target="_blank" class="client__link">{{link.name}}</a>
+              {% endfor %}
+          </div>
+        {% endif %}
       </div>
     </div>
   </section>
