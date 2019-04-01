@@ -48,13 +48,15 @@ html {
     line-height: 1.5;
   }
   
+  .body1, .body2 {
+    margin: 16px 0;
+  }
   .body1 {
     color: #404040;
   }
   
   .body2 {
     color: #5a5a5a;
-    font-weight: 300;
   }
 
   .headline__annotation {

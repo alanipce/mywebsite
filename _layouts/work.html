@@ -63,15 +63,15 @@ layout: default
         <div class="work-navigation">
           {% if prev_work %}
             <a href="{{prev_work.url}}" class="work-navigation__previous">
-                <div class="body1">{{prev_work.name}}</div>
-                <div class="body2">{{prev_work.timeline}}</div>
+                <div class="h4">{{prev_work.name}}</div>
+                <div>{{prev_work.timeline}}</div>
             </a>
           {% endif %}
 
           {% if next_work %}
             <a href="{{next_work.url}}" class="work-navigation__next">
-              <div class="body1">{{next_work.name}}</div>
-              <div class="body2">{{next_work.timeline}}</div>
+              <div class="h4">{{next_work.name}}</div>
+              <div>{{next_work.timeline}}</div>
             </a>
           {% endif %}
         </div>
