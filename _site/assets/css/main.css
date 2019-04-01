@@ -997,7 +997,25 @@ blockquote {
   float: left; }
 
 .work-navigation__next {
+  position: relative;
   float: right; }
+
+.work-navigation__next::before, .work-navigation__previous::before {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 20px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 2rem; }
+
+.work-navigation__next::before {
+  left: 100%;
+  content: "\f061"; }
+
+.work-navigation__previous::before {
+  right: 100%;
+  content: "\f060"; }
 
 /* Closing section styles */
 .closing__contact {
