@@ -19,6 +19,7 @@
   .hero__message {
     @extend .subhead;
     margin: 32px 0;
+    font-weight: normal;
   }
   
   .hero__actions {

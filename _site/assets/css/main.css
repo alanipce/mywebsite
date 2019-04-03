@@ -797,7 +797,8 @@ blockquote {
   text-align: center; }
 
 .hero__message {
-  margin: 32px 0; }
+  margin: 32px 0;
+  font-weight: normal; }
 
 .hero__actions {
   display: flex;
