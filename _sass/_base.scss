@@ -115,7 +115,7 @@ html {
   }
 
   @include typography-break-1 {
-    .subhead, .headline__annotation {
+    .subhead {
         font-size: 1.3rem;
     }
 
@@ -140,7 +140,7 @@ html {
   }
 
   @include typography-break-2 {
-    .subhead, .headline__annotation {
+    .subhead {
         font-size: 1.25rem;
     }
 

@@ -38,6 +38,10 @@
     margin-right: 8px;
     color: #5a5a5a;
   }
+
+  .hero__button:hover::after {
+    content: none;
+  }
   
   .hero__button:hover {
     color: #5FD6B3;

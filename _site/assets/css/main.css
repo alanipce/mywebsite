@@ -628,7 +628,7 @@ blockquote {
   /* 25px / 20px */ }
 
 @media (min-width: 56.25rem) {
-  .subhead, .hero__message, .headline__annotation {
+  .subhead, .hero__message {
     font-size: 1.3rem; }
 
   h1, .h1, .headline, .hero__title {
@@ -647,7 +647,7 @@ blockquote {
     /* 1.75x body copy size = 28px */
     line-height: 1.25; } }
 @media (min-width: 43.75rem) {
-  .subhead, .hero__message, .headline__annotation {
+  .subhead, .hero__message {
     font-size: 1.25rem; }
 
   h1, .h1, .headline, .hero__title {
@@ -814,6 +814,9 @@ blockquote {
   background: transparent;
   margin-right: 8px;
   color: #5a5a5a; }
+
+.hero__button:hover::after {
+  content: none; }
 
 .hero__button:hover {
   color: #5FD6B3; }

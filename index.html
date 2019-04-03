@@ -9,8 +9,8 @@
           <h1 class="hero__title">Pragmatic, passionate, and experienced app developer</h1>
           <p class="hero__message">My name is Alan and I am an Android App Developer. I have worked primarily with small startups and have published over five apps since I first started in june of 2013.</p>
           <div class="hero__actions">
-            <button class="hero__button hero__button--cta">Contact me</button>
-            <button class="hero__button">View Resume</button>
+            <a href="mailto:{{site.data.me.contact-email}}" class="hero__button hero__button--cta">Contact me</a>
+            <a href="/documents/resume-oct-3.pdf" target="_blank" class="hero__button">View Resume</a>
           </div>
       </div>
     </div>
@@ -44,7 +44,7 @@
 <section class="site-section site-section--dark site-section--black">
   <div class="content-area">
       <div class="closing">
-        <div class="closing__contact h3">Let's work together, contact me at <a class="emphasize" href="mailto:alanipce@gmail.com">alanipce@gmail.com</a></div>
+        <div class="closing__contact h3">Let's work together, contact me at <a class="emphasize" href="mailto:{{site.data.me.contact-email}}">{{site.data.me.contact-email}}</a></div>
         <div class="closing__social-links">
             <div class="closing__social-hover-dim-effect">
               {% for social in site.data.social %}
