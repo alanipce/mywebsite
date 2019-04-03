@@ -17,7 +17,7 @@
   </section>
 
   <!-- Work experience section -->
-  <section class="site-section site-section--overlap">
+  <section class="site-section site-section--overlap" id="portfolio-section">
     <div class="content-area">
       {% assign sorted_work = site.work | sort: 'order' %}
       {% for work in sorted_work %}
@@ -41,7 +41,7 @@
   </section>
 </div>
 <!-- Closing section -->
-<section class="site-section site-section--dark site-section--black">
+<section class="site-section site-section--dark site-section--black" id="contact-section">
   <div class="content-area">
       <div class="closing">
         <div class="closing__contact h3">Let's work together, contact me at <a class="emphasize" href="mailto:{{site.data.me.contact-email}}">{{site.data.me.contact-email}}</a></div>

@@ -679,21 +679,26 @@ blockquote {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  padding: 32px 0; }
+  padding: 32px 0;
+  justify-content: space-between; }
 
 .header__img {
-  width: 64px;
-  height: 64px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   margin-right: 16px; }
 
 .header__name {
   font-weight: bold;
   font-size: 1.2rem;
-  text-transform: capitalize; }
+  text-transform: uppercase;
+  letter-spacing: 0.5px; }
 
 .header__title {
   font-size: 0.85rem; }
+
+.header__navigation a:not(:last-of-type) {
+  margin-right: 16px; }
 
 /* 
   Collapses the padding between neighboring site sections.
@@ -793,11 +798,11 @@ blockquote {
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
-  padding: 30px 0;
+  padding: 48px 0;
   text-align: center; }
 
 .hero__message {
-  margin: 32px 0;
+  margin: 24px 0;
   font-weight: normal; }
 
 .hero__actions {
