@@ -1,6 +1,6 @@
 ---
 ---
-<div class="site-section-contrast-wrapper">
+<div class="site-section-collapse-wrapper">
   <!-- Introduction section -->
   <section class="site-section site-section--with-header">
     <div class="content-area">
@@ -17,7 +17,7 @@
   </section>
 
   <!-- Work experience section -->
-  <section class="site-section site-section--overlap" id="portfolio-section">
+  <section class="site-section" id="portfolio-section">
     <div class="content-area">
       {% assign sorted_work = site.work | sort: 'order' %}
       {% for work in sorted_work %}

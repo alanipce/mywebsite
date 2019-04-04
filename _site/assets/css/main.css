@@ -712,8 +712,8 @@ blockquote {
   Which lack a visual guide of where one section starts and the other ends. Often
   leads to visually appearing too spaced out.
 */
-.site-section-collapse-wrapper .site-section:not(:last-child) {
-  padding-bottom: 0; }
+.site-section-collapse-wrapper .site-section:not(:first-child) {
+  padding-top: 0; }
 
 .site-section-contrast-wrapper .site-section:nth-child(even) {
   background: #e0e0e0; }
