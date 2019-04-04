@@ -1,3 +1,4 @@
+$header-padding-mobile: $header-padding * 0.7;
 $section-padding-mobile: $section-padding * 0.6;
 $content-padding-mobile: $content-padding / 4;
 
@@ -14,7 +15,7 @@ $content-padding-mobile: $content-padding / 4;
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    margin-right: 16px;
+    margin-right: 24px;
   }
   
   .header__name {
@@ -28,7 +29,19 @@ $content-padding-mobile: $content-padding / 4;
     font-size: 0.85rem;
   }
 
-  .header__navigation a:not(:last-of-type) {
+  .header__navigation {
+    margin-top: 24px;
+  }
+
+  .header__link {
+    @extend .subhead;
+  }
+
+  .header__link--current {
+    color: #404040;
+  }
+
+  .header__link:not(:last-of-type) {
     margin-right: 16px;
   }
 
@@ -102,6 +115,9 @@ $content-padding-mobile: $content-padding / 4;
   }
 
   @include tablet {
+    .header {
+      padding: $header-padding-mobile 0;
+    }
     .content-area {
         padding-left: $content-padding-mobile;
         padding-right: $content-padding-mobile;
@@ -114,7 +130,7 @@ $content-padding-mobile: $content-padding / 4;
 
     .site-section--with-header {
         padding-top: 0;
-        padding-bottom: $header-padding * 2;
+        padding-bottom: $header-padding-mobile * 2;
     }
 
     .site-section--overlap .content-area {

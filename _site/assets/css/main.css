@@ -585,7 +585,7 @@ body, .content {
   color: #5a5a5a;
   font-weight: 300; }
 
-.subhead, .hero__message {
+.subhead, .header__link, .hero__message {
   font-size: 1.2rem;
   line-height: 1.7;
   margin-top: 16px;
@@ -628,7 +628,7 @@ blockquote {
   /* 25px / 20px */ }
 
 @media (min-width: 56.25rem) {
-  .subhead, .hero__message {
+  .subhead, .header__link, .hero__message {
     font-size: 1.3rem; }
 
   h1, .h1, .headline, .hero__title {
@@ -647,7 +647,7 @@ blockquote {
     /* 1.75x body copy size = 28px */
     line-height: 1.25; } }
 @media (min-width: 43.75rem) {
-  .subhead, .hero__message {
+  .subhead, .header__link, .hero__message {
     font-size: 1.25rem; }
 
   h1, .h1, .headline, .hero__title {
@@ -686,7 +686,7 @@ blockquote {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  margin-right: 16px; }
+  margin-right: 24px; }
 
 .header__name {
   font-weight: bold;
@@ -697,7 +697,13 @@ blockquote {
 .header__title {
   font-size: 0.85rem; }
 
-.header__navigation a:not(:last-of-type) {
+.header__navigation {
+  margin-top: 24px; }
+
+.header__link--current {
+  color: #404040; }
+
+.header__link:not(:last-of-type) {
   margin-right: 16px; }
 
 /* 
@@ -757,6 +763,9 @@ blockquote {
   padding-right: 80px; }
 
 @media screen and (max-width: 768px) {
+  .header {
+    padding: 22.4px 0; }
+
   .content-area {
     padding-left: 20px;
     padding-right: 20px; }
@@ -767,7 +776,7 @@ blockquote {
 
   .site-section--with-header {
     padding-top: 0;
-    padding-bottom: 64px; }
+    padding-bottom: 44.8px; }
 
   .site-section--overlap .content-area {
     margin-top: -90px; } }
