@@ -715,9 +715,6 @@ blockquote {
 .site-section-collapse-wrapper .site-section:not(:first-child) {
   padding-top: 0; }
 
-.site-section-contrast-wrapper .site-section:nth-child(even) {
-  background: #e0e0e0; }
-
 .site-section {
   width: 100vw;
   padding-top: 100px;
@@ -729,22 +726,39 @@ blockquote {
 .site-section--black {
   background: #232323; }
 
-.site-section--dark {
+.site-section--dark-gray, .site-section-contrast-wrapper .site-section:nth-child(even) {
+  background: #303030; }
+
+.site-section--dark, .site-section-contrast-wrapper .site-section:nth-child(even) {
   color: #C2C2C2; }
 
-.site-section--dark h1,
+.site-section--dark .body1, .site-section-contrast-wrapper .site-section:nth-child(even) .body1,
+.site-section--dark .body2,
+.site-section-contrast-wrapper .site-section:nth-child(even) .body2 {
+  color: #C2C2C2; }
+
+.site-section--dark h1, .site-section-contrast-wrapper .site-section:nth-child(even) h1,
 .site-section--dark h2,
+.site-section-contrast-wrapper .site-section:nth-child(even) h2,
 .site-section--dark h3,
+.site-section-contrast-wrapper .site-section:nth-child(even) h3,
 .site-section--dark h4,
+.site-section-contrast-wrapper .site-section:nth-child(even) h4,
 .site-section--dark h5,
+.site-section-contrast-wrapper .site-section:nth-child(even) h5,
 .site-section--dark h6,
+.site-section-contrast-wrapper .site-section:nth-child(even) h6,
 .site-section--dark .h1,
+.site-section-contrast-wrapper .site-section:nth-child(even) .h1,
 .site-section--dark .h2,
+.site-section-contrast-wrapper .site-section:nth-child(even) .h2,
 .site-section--dark .h3,
-.site-section--dark .h4 {
+.site-section-contrast-wrapper .site-section:nth-child(even) .h3,
+.site-section--dark .h4,
+.site-section-contrast-wrapper .site-section:nth-child(even) .h4 {
   color: #FFF; }
 
-.site-section--dark a {
+.site-section--dark a, .site-section-contrast-wrapper .site-section:nth-child(even) a {
   color: #FFF; }
 
 .site-section--with-header {
