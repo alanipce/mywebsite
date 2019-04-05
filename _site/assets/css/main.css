@@ -664,7 +664,7 @@ blockquote {
   align-items: center;
   padding: 32px 0;
   justify-content: space-between;
-  margin-bottom: 68px; }
+  margin-bottom: 36px; }
 
 .header__logo-link:hover::after {
   content: none; }
@@ -769,7 +769,7 @@ blockquote {
 @media screen and (max-width: 768px) {
   .header {
     padding: 22.4px 0;
-    margin-bottom: 37.6px; }
+    margin-bottom: 15.2px; }
 
   .content-area {
     padding-left: 20px;
