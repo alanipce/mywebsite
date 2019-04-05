@@ -84,16 +84,19 @@
     border: none;
   }
   
-  .work-container--caseaide {
+  .work-background--caseaide {
     background: #508FDE;
+    @extend .site-section--dark;
   }
   
-  .work-container--tumee {
+  .work-background--tumee {
     background: #11103D;
+    @extend .site-section--dark;
   }
   
-  .work-container--csusb-mobile-apps {
+  .work-background--csusb-mobile-apps {
     background: #0065BD;
+    @extend .site-section--dark;
   }
   
   .work-container .work__client {
@@ -261,39 +264,19 @@
     padding: 6%;
   }
 
-  .work-navigation {
-    @extend .clearfix;
+  .work-preview {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
   }
 
-  .work-navigation__previous {
-    float: left;
+  a.work-preview::after {
+    content: none;
   }
 
-  .work-navigation__next {
-    position: relative;
-    float: right;
-  }
-
-  .work-navigation__next::before, .work-navigation__previous::before {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 0 20px;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    font-size: 2rem;
-  }
-
-  .work-navigation__next::before {
-    left: 100%;
-    content: "\f061";
-  }
-
-  .work-navigation__previous::before {
-    right: 100%;
-    content: "\f060";
-  }
-  
   /* Closing section styles */
   .closing__contact {
     font-weight: 300;

@@ -2,81 +2,65 @@
 layout: default
 ---
 
-<div class="site-section-contrast-wrapper">
-  <!-- Overview section -->
-  <section class="site-section site-section--with-header">
-    <div class="content-area">
-      {% include header.html %}
-      <div class="client-overview">
-          <div class="client__info">
-              <div class="headline">{{page.role}} at {{page.name}} <span class="headline__annotation">{{page.timeline}}</span></div>
-              <div class="subhead">{{page.description}}</div>
-          </div>
-        {% if page.links %}
-          <div class="client__links">
-              {% for link in page.links  %}
-                  <a href="{{link.url}}" target="_blank" class="client__link">{{link.name}}</a>
-              {% endfor %}
-          </div>
-        {% endif %}
-      </div>
-    </div>
-  </section>
-
-  <!-- Responsibilities section -->
-  <section class="site-section">
-    <div class="content-area">
-      <h2 class="title">Responsibilities</h2>
-      <div class="responsibility">
-          <ul class="responsibility__specifics list">
-            {% for responsibility in page.responsibilities  %}
-                <li class="list__item">
-                    <div class="h4">{{responsibility.title}}</div>
-                    <div class="body2">{{responsibility.summary}}</div>
-                </li>
-            {% endfor %}
-          </ul>
-      </div>
-    </div>
-  </section>
-
-  {{content}}
-
-  {% assign sorted_work = site.work | sort: 'order' %}
-
-  {% for work in sorted_work %}
-    {% if work.order == page.order %}
-      {% unless forloop.first %}
-        {% assign prev_work = temp_prev %}
-      {% endunless %}
-      {% unless forloop.last %}
-        {% assign next_work = sorted_work[forloop.index] %}
-      {% endunless %}
-    {% endif %}
-
-    {% assign temp_prev = work %}
-  {% endfor %}
-
-  {% if prev_work or next_work %}
-    <div class="site-section">
-      <div class="content-area">
-        <div class="work-navigation">
-          {% if prev_work %}
-            <a href="{{prev_work.url}}" class="work-navigation__previous">
-                <div class="h4">{{prev_work.name}}</div>
-                <div>{{prev_work.timeline}}</div>
-            </a>
-          {% endif %}
-
-          {% if next_work %}
-            <a href="{{next_work.url}}" class="work-navigation__next">
-              <div class="h4">{{next_work.name}}</div>
-              <div>{{next_work.timeline}}</div>
-            </a>
-          {% endif %}
+<!-- Overview section -->
+<section class="site-section site-section--with-header">
+  <div class="content-area">
+    {% include header.html %}
+    <div class="client-overview">
+        <div class="client__info">
+            <div class="headline">{{page.role}} at {{page.name}} <span class="headline__annotation">{{page.timeline}}</span></div>
+            <div class="subhead">{{page.description}}</div>
         </div>
-        
-      </div>
+      {% if page.links %}
+        <div class="client__links">
+            {% for link in page.links  %}
+                <a href="{{link.url}}" target="_blank" class="client__link">{{link.name}}</a>
+            {% endfor %}
+        </div>
+      {% endif %}
     </div>
-    {% endif %}
+  </div>
+</section>
+
+<!-- Responsibilities section -->
+<section class="site-section site-section--dark site-section--dark-gray">
+  <div class="content-area">
+    <h2 class="title">Responsibilities</h2>
+    <div class="responsibility">
+        <ul class="responsibility__specifics list">
+          {% for responsibility in page.responsibilities  %}
+              <li class="list__item">
+                  <div class="h4">{{responsibility.title}}</div>
+                  <div class="body2">{{responsibility.summary}}</div>
+              </li>
+          {% endfor %}
+        </ul>
+    </div>
+  </div>
+</section>
+
+{{content}}
+
+{% assign sorted_work = site.work | sort: 'order' %}
+
+{% for work in sorted_work %}
+  {% if work.order == page.order %}
+    {% unless forloop.last %}
+      {% assign next_work = sorted_work[forloop.index] %}
+    {% endunless %}
+  {% endif %}
+{% endfor %}
+
+{% if next_work %}
+<div class="site-section">
+  <div class="content-area">
+    <a href="{{next_work.url}}" class="work-preview work-background--{{next_work.name | slugify}}">
+      <div class="work-preview__info">
+        <div>Next</div>
+        <div class="h4">{{next_work.name}} <span class="fas fa-arrow-right"></span></div>
+        <div>{{next_work.timeline}}</div>
+      </div>
+    </a>
+  </div>        
 </div>
+{% endif %}
