@@ -586,31 +586,25 @@ body, .content {
   font-weight: 300; }
 
 .subhead, .header__link, .hero__message {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   line-height: 1.7;
   margin-top: 16px;
   margin-bottom: 16px;
   font-weight: 300; }
 
 h1, .h1, .headline, .hero__title {
-  font-size: 2rem;
-  /* 2x body copy size = 32px */
+  font-size: 3rem;
   line-height: 1.25;
-  /* 45px / 36px */
   font-weight: bold;
   color: #404040; }
 
 h2, .h2 {
-  font-size: 1.625rem;
-  /* 1.625x body copy size = 26px */
-  line-height: 1.15384615;
-  /* 30px / 26px */ }
+  font-size: 2.25rem;
+  line-height: 1.25; }
 
 h3, .h3 {
-  font-size: 1.375rem;
-  /* 1.375x body copy size = 22px */
-  line-height: 1.13636364;
-  /* 25px / 22px */ }
+  font-size: 1.75rem;
+  line-height: 1.25; }
 
 .title {
   font-weight: normal;
@@ -618,62 +612,51 @@ h3, .h3 {
 
 h4, .h4, .title {
   font-size: 1.275rem;
-  /* 1.125x body copy size = 18px */
-  line-height: 1.11111111; }
+  line-height: 1.22222222; }
 
 blockquote {
-  font-size: 1.25rem;
-  /* 20px / 16px */
-  line-height: 1.25;
-  /* 25px / 20px */ }
+  font-size: 1.5rem;
+  line-height: 1.45833333; }
 
-@media (min-width: 56.25rem) {
-  .subhead, .header__link, .hero__message {
-    font-size: 1.3rem; }
-
-  h1, .h1, .headline, .hero__title {
-    font-size: 2.5rem;
-    /* 3x body copy size = 48px */
-    line-height: 1.05;
-    /* keep to a multiple of the 20px line height and something more appropriate for display headings */ }
-
-  h2, .h2 {
-    font-size: 2.25rem;
-    /* 2.25x body copy size = 36px */
-    line-height: 1.25; }
-
-  h3, .h3 {
-    font-size: 1.75rem;
-    /* 1.75x body copy size = 28px */
-    line-height: 1.25; } }
-@media (min-width: 43.75rem) {
+@media (max-width: 56.25rem) {
   .subhead, .header__link, .hero__message {
     font-size: 1.25rem; }
 
   h1, .h1, .headline, .hero__title {
-    font-size: 2.2rem;
-    /* 2.5x body copy size = 40px */
-    line-height: 1.125; }
+    font-size: 2.5rem;
+    line-height: 1.25; }
 
   h2, .h2 {
     font-size: 2rem;
-    /* 2x body copy size = 32px */
     line-height: 1.25; }
 
   h3, .h3 {
     font-size: 1.5rem;
-    /* 1.5x body copy size = 24px */
-    line-height: 1.25; }
+    line-height: 1.25; } }
+@media (max-width: 43.75rem) {
+  .subhead, .header__link, .hero__message {
+    font-size: 1.2rem; }
+
+  h1, .h1, .headline, .hero__title {
+    font-size: 2rem;
+    /* 2x body copy size = 32px */
+    line-height: 1.25;
+    /* 45px / 36px */ }
+
+  h2, .h2 {
+    font-size: 1.625rem;
+    line-height: 1.15384615; }
+
+  h3, .h3 {
+    font-size: 1.375rem;
+    line-height: 1.13636364; }
 
   h4, .h4, .title {
-    line-height: 1.22222222;
-    /* (22px / 18px */ }
+    line-height: 1.11111111; }
 
   blockquote {
-    font-size: 1.5rem;
-    /* 24px / 16px = */
-    line-height: 1.45833333;
-    /* 35px / 24px */ } }
+    font-size: 1.25rem;
+    line-height: 1.25; } }
 .header {
   display: flex;
   flex-direction: row;

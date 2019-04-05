@@ -35,14 +35,14 @@
     }
 }
 
-@mixin typography-break-1 {
-    @media (min-width: #{$typography-breakpoint-1}) {
+@mixin typography-break-normal {
+    @media (max-width: #{$typography-breakpoint-normal}) {
         @content;
     }
 }
 
-@mixin typography-break-2 {
-    @media (min-width: #{$typography-breakpoint-2}) {
+@mixin typography-break-small {
+    @media (max-width: #{$typography-breakpoint-small}) {
         @content;
     }
 }
