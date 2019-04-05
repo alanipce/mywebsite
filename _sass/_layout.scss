@@ -12,19 +12,9 @@ $content-padding-mobile: $content-padding / 4;
     margin-bottom: $section-padding - $header-padding * 2;
   }
 
-  .header__logo-link:hover::after {
-    content: none;
-  }
-
-  .header__logo-link:hover .header__logo {
-    border: 3px solid #5FD6B3;
-  }
-  
   .header__logo {
     box-sizing: border-box;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+    height: 60px;
     margin-right: 24px;
   }
   
