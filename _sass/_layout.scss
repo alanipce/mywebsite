@@ -9,6 +9,7 @@ $content-padding-mobile: $content-padding / 4;
     align-items: center;   
     padding: $header-padding 0;
     justify-content: space-between;
+    margin-bottom: $section-padding - $header-padding;
   }
 
   .header__logo-link:hover::after {
@@ -117,7 +118,6 @@ $content-padding-mobile: $content-padding / 4;
   // visually balance whitespace with header
   .site-section--with-header {
     padding-top: 0;
-    padding-bottom: $header-padding * 2;
   }
   
   .site-section--overlap .content-area {
@@ -136,6 +136,7 @@ $content-padding-mobile: $content-padding / 4;
   @include tablet {
     .header {
       padding: $header-padding-mobile 0;
+      margin-bottom: $section-padding-mobile - $header-padding-mobile;
     }
     .content-area {
         padding-left: $content-padding-mobile;
@@ -149,7 +150,6 @@ $content-padding-mobile: $content-padding / 4;
 
     .site-section--with-header {
         padding-top: 0;
-        padding-bottom: $header-padding-mobile * 2;
     }
 
     .site-section--overlap .content-area {
