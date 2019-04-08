@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="668px" height="167px" viewBox="0 0 668 167" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="r" transform="translate(-825.000000, -1271.000000)">
+            <g id="Group-2" transform="translate(827.000000, 1279.000000)">
+                <g id="Group-Copy-3" stroke="#404040" stroke-width="15">
+                    <path d="M23.3445012,108.9163 C34.5893728,32.0167893 46.9395642,4.28591418 62.5666569,0.16266515 C64.9368697,-0.462719687 67.4043016,0.762367909 68.3351757,3.02675423 C79.9111373,31.1857185 81.0140954,66.3892846 77.4410006,97.2217276 C76.2943569,107.116183 74.6661567,116.560484 72.7479805,125.177358 C60.1665724,181.695844 71.1192943,132.223817 77.4410006,101.869841 C85.2382942,99.9111697 102.716998,91.3036816 104.235912,90.4871004 C204.676188,36.4895579 105.640661,35.7296135 0,53.4003594" id="Path-3"></path>
+                </g>
+                <text id="ALAN-PEREZ" font-family="OpenSans-SemiBold, Open Sans" font-size="80" font-weight="500" fill="#404040">
+                    <tspan x="200" y="107">ALAN PEREZ</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
