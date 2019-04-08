@@ -80,13 +80,12 @@
     padding-bottom: 56%;
     cursor: pointer;
     background: #444;
-    color: #ECECEC;
+    color: $secondary-text-color-light;
     border: none;
   }
   
   .work-background--caseaide {
     background: #508FDE;
-    @extend .site-section--dark;
   }
   
   .work-background--tumee {

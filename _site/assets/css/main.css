@@ -714,56 +714,46 @@ blockquote {
 .site-section--accent-background {
   background: #5FD6B3; }
 
-.site-section--dark, .work-background--caseaide, .work-background--tumee, .work-background--csusb-mobile-apps {
-  color: #C2C2C2; }
+.site-section--dark, .work-background--tumee, .work-background--csusb-mobile-apps {
+  color: #E2E2E2; }
 
-.site-section--dark .body1, .work-background--caseaide .body1, .work-background--tumee .body1, .work-background--csusb-mobile-apps .body1,
+.site-section--dark .body1, .work-background--tumee .body1, .work-background--csusb-mobile-apps .body1,
 .site-section--dark .body2,
-.work-background--caseaide .body2,
 .work-background--tumee .body2,
 .work-background--csusb-mobile-apps .body2 {
-  color: #C2C2C2; }
+  color: #E2E2E2; }
 
-.site-section--dark h1, .work-background--caseaide h1, .work-background--tumee h1, .work-background--csusb-mobile-apps h1,
+.site-section--dark h1, .work-background--tumee h1, .work-background--csusb-mobile-apps h1,
 .site-section--dark h2,
-.work-background--caseaide h2,
 .work-background--tumee h2,
 .work-background--csusb-mobile-apps h2,
 .site-section--dark h3,
-.work-background--caseaide h3,
 .work-background--tumee h3,
 .work-background--csusb-mobile-apps h3,
 .site-section--dark h4,
-.work-background--caseaide h4,
 .work-background--tumee h4,
 .work-background--csusb-mobile-apps h4,
 .site-section--dark h5,
-.work-background--caseaide h5,
 .work-background--tumee h5,
 .work-background--csusb-mobile-apps h5,
 .site-section--dark h6,
-.work-background--caseaide h6,
 .work-background--tumee h6,
 .work-background--csusb-mobile-apps h6,
 .site-section--dark .h1,
-.work-background--caseaide .h1,
 .work-background--tumee .h1,
 .work-background--csusb-mobile-apps .h1,
 .site-section--dark .h2,
-.work-background--caseaide .h2,
 .work-background--tumee .h2,
 .work-background--csusb-mobile-apps .h2,
 .site-section--dark .h3,
-.work-background--caseaide .h3,
 .work-background--tumee .h3,
 .work-background--csusb-mobile-apps .h3,
 .site-section--dark .h4,
-.work-background--caseaide .h4,
 .work-background--tumee .h4,
 .work-background--csusb-mobile-apps .h4 {
   color: #FFFFFF; }
 
-.site-section--dark a, .work-background--caseaide a, .work-background--tumee a, .work-background--csusb-mobile-apps a {
+.site-section--dark a, .work-background--tumee a, .work-background--csusb-mobile-apps a {
   color: #FFFFFF; }
 
 .site-section--with-header {
@@ -880,7 +870,7 @@ blockquote {
   padding-bottom: 56%;
   cursor: pointer;
   background: #444;
-  color: #ECECEC;
+  color: #E2E2E2;
   border: none; }
 
 .work-background--caseaide {
