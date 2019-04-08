@@ -37,7 +37,7 @@
     border: none;
     background: transparent;
     margin-right: 8px;
-    color: #5a5a5a;
+    color: $secondary-text-color;
   }
 
   .hero__button:hover::after {
@@ -45,13 +45,13 @@
   }
   
   .hero__button:hover {
-    color: #5FD6B3;
+    color: $accent-color;
   }
   
   .hero__button--cta {
     padding: 16px 40px;
     border: none;
-    background: #5FD6B3;
+    background: $accent-color;
     color: #232323;
     transition: transform 300ms ease-out;
   }
@@ -100,11 +100,11 @@
   }
   
   .work-container .work__client {
-    color: #FFF;
+    color: $primary-text-color-light;
   }
   
   .work-container .work__role {
-    color: #FFF;
+    color: $primary-text-color-light;
   }
   
   .work-container .work {
@@ -139,7 +139,7 @@
     align-items: baseline;
   }
   .work__client {
-    color: #404040;
+    color: $primary-text-color;
     font-size: 3rem;
     margin-right: 10px;
   }
@@ -179,7 +179,7 @@
   }
   
   .client__name {
-    color: #404040;
+    color: $primary-text-color;
     font-size: 3rem;
     margin-right: 10px;
   }
@@ -200,7 +200,7 @@
   }
   
   .client__link {
-    color: #404040;
+    color: $primary-text-color;
     text-transform: uppercase;
     font-size: 0.75rem;
     font-weight: bold;
@@ -302,8 +302,8 @@
     line-height: 64px;
     font-size: 24px;
     margin-right: 24px;
-    color: #FFF;
-    border: 1px solid #FFF;
+    color: $primary-text-color-light;
+    border: 1px solid $primary-text-color-light;
     border-radius: 50%;
     text-align: center;
   }
@@ -317,8 +317,8 @@
   }
   
   .closing__social-links a:hover {
-    border-color: #5FD6B3;
-    background: #5FD6B3;
+    border-color: $accent-color;
+    background: $accent-color;
     color: #232323;
   }
   
