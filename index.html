@@ -21,7 +21,7 @@
     <div class="content-area">
       {% assign sorted_work = site.work | sort: 'order' %}
       {% for work in sorted_work %}
-      <a href="{{work.url}}" class="work-container work-background--{{work.name | slugify}}" aria-label="Click to view">
+      <a href="{{work.url}}" class="work-container work-background--{{work.name | slugify}}" aria-label="View more info on {{work.name}} work experience.">
         <div class="work-container__scale-wrapper">
           <div class="work">
             <div class="work__info">

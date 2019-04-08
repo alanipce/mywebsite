@@ -54,7 +54,7 @@ layout: default
 {% if next_work %}
 <div class="site-section">
   <div class="content-area">
-    <a href="{{next_work.url}}" class="work-preview work-background--{{next_work.name | slugify}}">
+    <a href="{{next_work.url}}" class="work-preview work-background--{{next_work.name | slugify}}" aria-label="View {{next_work.name}} work experience">
       <div class="work-preview__info">
         <div>Next</div>
         <div class="h4">{{next_work.name}} <span class="fas fa-arrow-right"></span></div>
