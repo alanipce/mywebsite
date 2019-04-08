@@ -870,23 +870,16 @@ blockquote {
   padding-bottom: 56%;
   cursor: pointer;
   background: #444;
-  color: #E2E2E2;
   border: none; }
 
 .work-background--caseaide {
-  background: #508FDE; }
+  background: #e8e6e6; }
 
 .work-background--tumee {
   background: #11103D; }
 
 .work-background--csusb-mobile-apps {
   background: #0065BD; }
-
-.work-container .work__client {
-  color: #FFFFFF; }
-
-.work-container .work__role {
-  color: #FFFFFF; }
 
 .work-container .work {
   position: absolute;
@@ -916,7 +909,6 @@ blockquote {
   align-items: baseline; }
 
 .work__client {
-  color: #232323;
   font-size: 3rem;
   margin-right: 10px; }
 

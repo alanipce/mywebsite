@@ -80,12 +80,11 @@
     padding-bottom: 56%;
     cursor: pointer;
     background: #444;
-    color: $secondary-text-color-light;
     border: none;
   }
   
   .work-background--caseaide {
-    background: #508FDE;
+    background: #e8e6e6;
   }
   
   .work-background--tumee {
@@ -96,14 +95,6 @@
   .work-background--csusb-mobile-apps {
     background: #0065BD;
     @extend .site-section--dark;
-  }
-  
-  .work-container .work__client {
-    color: $primary-text-color-light;
-  }
-  
-  .work-container .work__role {
-    color: $primary-text-color-light;
   }
   
   .work-container .work {
@@ -138,7 +129,6 @@
     align-items: baseline;
   }
   .work__client {
-    color: $primary-text-color;
     font-size: 3rem;
     margin-right: 10px;
   }
