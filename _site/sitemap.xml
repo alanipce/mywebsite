@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>/work/caseaide</loc>
-<lastmod>2019-04-08T13:22:14-07:00</lastmod>
+<loc>/work/caseaide/</loc>
+<lastmod>2019-04-08T13:59:11-07:00</lastmod>
 </url>
 <url>
-<loc>/work/csusb</loc>
-<lastmod>2019-04-08T13:22:14-07:00</lastmod>
+<loc>/work/csusb/</loc>
+<lastmod>2019-04-08T13:59:11-07:00</lastmod>
 </url>
 <url>
-<loc>/work/tumee</loc>
-<lastmod>2019-04-08T13:22:14-07:00</lastmod>
+<loc>/work/tumee/</loc>
+<lastmod>2019-04-08T13:59:11-07:00</lastmod>
 </url>
 <url>
 <loc>/</loc>
-</url>
-<url>
-<loc>/documents/Resume.pdf</loc>
-<lastmod>2019-04-08T13:18:20-07:00</lastmod>
 </url>
 <url>
 <loc>/documents/csusb-letter-of-recommendation.pdf</loc>
@@ -26,5 +22,9 @@
 <url>
 <loc>/documents/html5-webapp-certifcation.pdf</loc>
 <lastmod>2018-10-01T12:03:36-07:00</lastmod>
+</url>
+<url>
+<loc>/documents/resume.pdf</loc>
+<lastmod>2019-04-08T13:38:29-07:00</lastmod>
 </url>
 </urlset>
