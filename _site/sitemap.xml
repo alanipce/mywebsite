@@ -2,22 +2,18 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://localhost:4000/work/caseaide</loc>
-<lastmod>2019-04-08T13:03:01-07:00</lastmod>
+<lastmod>2019-04-08T13:05:59-07:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/work/csusb</loc>
-<lastmod>2019-04-08T13:03:01-07:00</lastmod>
+<lastmod>2019-04-08T13:05:59-07:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/work/tumee</loc>
-<lastmod>2019-04-08T13:03:01-07:00</lastmod>
+<lastmod>2019-04-08T13:05:59-07:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/documents/Resume.pdf</loc>
-<lastmod>2018-10-01T12:03:36-07:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/documents/csusb-letter-of-recommendation.pdf</loc>
@@ -28,7 +24,7 @@
 <lastmod>2018-10-01T12:03:36-07:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/documents/resume-oct-3.pdf</loc>
+<loc>http://localhost:4000/documents/resume.pdf</loc>
 <lastmod>2018-10-03T13:45:18-07:00</lastmod>
 </url>
 <url>
