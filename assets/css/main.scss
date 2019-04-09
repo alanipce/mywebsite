@@ -92,7 +92,7 @@
     @extend .site-section--dark;
   }
   
-  .work-background--csusb-mobile-apps {
+  .work-background--csusb {
     background: #0065BD;
     @extend .site-section--dark;
   }
@@ -321,17 +321,13 @@
   }
 
   @include tablet {
-    .work__client {
-        font-size: 1.75rem;
-      }
-    
+      
+
       .work-container .work__illustration {
         display: none;
       }
     
-      .work-container .work {
-        padding: 32px;
-      }
+      
 
       .hero {
         padding: 20px 0;
@@ -357,5 +353,25 @@
   @include phone {
     .hero {
         text-align: start;
+      }
+
+      .work__client {
+        font-size: 1.75rem;
+      }
+    
+      .work__description {
+        margin-top: 24px;
+      }
+
+      .work__timeline {
+        font-size: 1rem;
+      }
+
+      .work__role {
+        font-size: 0.75rem;
+      }
+
+      .work-container .work {
+        padding: 32px;
       }
   }

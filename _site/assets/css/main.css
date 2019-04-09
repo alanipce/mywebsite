@@ -714,46 +714,46 @@ blockquote {
 .site-section--accent-background {
   background: #5FD6B3; }
 
-.site-section--dark, .work-background--tumee, .work-background--csusb-mobile-apps {
+.site-section--dark, .work-background--tumee, .work-background--csusb {
   color: #E2E2E2; }
 
-.site-section--dark .body1, .work-background--tumee .body1, .work-background--csusb-mobile-apps .body1,
+.site-section--dark .body1, .work-background--tumee .body1, .work-background--csusb .body1,
 .site-section--dark .body2,
 .work-background--tumee .body2,
-.work-background--csusb-mobile-apps .body2 {
+.work-background--csusb .body2 {
   color: #E2E2E2; }
 
-.site-section--dark h1, .work-background--tumee h1, .work-background--csusb-mobile-apps h1,
+.site-section--dark h1, .work-background--tumee h1, .work-background--csusb h1,
 .site-section--dark h2,
 .work-background--tumee h2,
-.work-background--csusb-mobile-apps h2,
+.work-background--csusb h2,
 .site-section--dark h3,
 .work-background--tumee h3,
-.work-background--csusb-mobile-apps h3,
+.work-background--csusb h3,
 .site-section--dark h4,
 .work-background--tumee h4,
-.work-background--csusb-mobile-apps h4,
+.work-background--csusb h4,
 .site-section--dark h5,
 .work-background--tumee h5,
-.work-background--csusb-mobile-apps h5,
+.work-background--csusb h5,
 .site-section--dark h6,
 .work-background--tumee h6,
-.work-background--csusb-mobile-apps h6,
+.work-background--csusb h6,
 .site-section--dark .h1,
 .work-background--tumee .h1,
-.work-background--csusb-mobile-apps .h1,
+.work-background--csusb .h1,
 .site-section--dark .h2,
 .work-background--tumee .h2,
-.work-background--csusb-mobile-apps .h2,
+.work-background--csusb .h2,
 .site-section--dark .h3,
 .work-background--tumee .h3,
-.work-background--csusb-mobile-apps .h3,
+.work-background--csusb .h3,
 .site-section--dark .h4,
 .work-background--tumee .h4,
-.work-background--csusb-mobile-apps .h4 {
+.work-background--csusb .h4 {
   color: #FFFFFF; }
 
-.site-section--dark a, .work-background--tumee a, .work-background--csusb-mobile-apps a {
+.site-section--dark a, .work-background--tumee a, .work-background--csusb a {
   color: #FFFFFF; }
 
 .site-section--with-header {
@@ -878,7 +878,7 @@ blockquote {
 .work-background--tumee {
   background: #11103D; }
 
-.work-background--csusb-mobile-apps {
+.work-background--csusb {
   background: #0065BD; }
 
 .work-container .work {
@@ -1070,14 +1070,8 @@ a.work-preview::after {
   margin-top: 64px; }
 
 @media screen and (max-width: 768px) {
-  .work__client {
-    font-size: 1.75rem; }
-
   .work-container .work__illustration {
     display: none; }
-
-  .work-container .work {
-    padding: 32px; }
 
   .hero {
     padding: 20px 0; }
@@ -1096,4 +1090,19 @@ a.work-preview::after {
     font-size: 20px; } }
 @media screen and (max-width: 480px) {
   .hero {
-    text-align: start; } }
+    text-align: start; }
+
+  .work__client {
+    font-size: 1.75rem; }
+
+  .work__description {
+    margin-top: 24px; }
+
+  .work__timeline {
+    font-size: 1rem; }
+
+  .work__role {
+    font-size: 0.75rem; }
+
+  .work-container .work {
+    padding: 32px; } }
