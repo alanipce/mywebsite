@@ -1,9 +1,7 @@
 <div class="header">
   <a href="/" class="header__logo-link"><img class="header__logo" src="/assets/img/logo-with-name.svg"></a>
-  <!-- <a href="/" class="header__about">
-      <div class="header__name">Alan Perez</div>
-      <div class="header__title">Personal portfolio</div>
-  </a> -->
+  <input id="navigation-toggle" class="header__navigation-toggle" type="checkbox">
+  <label for="navigation-toggle" class="header__navigation-toggle-label"></label>
   <nav class="header__navigation">
     <a href="/" {% if page.url == "/" %}class="header__link header__link--current" {% else %}class="header__link"{% endif %}>Home</a>
     <a href="/#portfolio-section" class="header__link">Portfolio</a>
